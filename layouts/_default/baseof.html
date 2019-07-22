@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "ru" }}">
+  {{- partial "head.html" . -}}
+  <body class="sans-serif fw3">
+    {{- partial "header.html" . -}}
+    {{- if .IsHome }}
+      {{- partial "schedule.html" . -}}
+      {{- partial "register.html" . -}}
+    {{- else }}
+      {{- block "main" . }}{{- end }}
+    {{- end }}
+    {{- partial "footer.html" . -}}
+  </body>
+</html>

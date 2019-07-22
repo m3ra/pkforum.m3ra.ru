@@ -1,0 +1,52 @@
+<article class="ph4 pv4 pv6-l w-100 bg-white">
+    <h3 class="f3 f2-ns f-4-l fw3 sans-serif dark-green tc">31 августа</h3>
+    <div class="overflow-auto">
+        <table class="f6 f5-ns f4-l w-100 mw8 center" cellspacing="0">
+            <thead>
+                <tr>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Время</th>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Тема</th>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Докладчик</th>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Город</th>
+                </tr>
+            </thead>
+            <tbody class="lh-copy">
+                {{ $url := "/static/29.08.2019.csv" }}
+                {{ $sep := "," }}
+                {{ range $i, $r := getCSV $sep $url }}
+                <tr>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 0 }}</td>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 1 }}</td>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 2 }}</td>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 3 }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+    <h3 class="f3 f2-ns f-4-l fw3 sans-serif dark-green tc pt4 pt6-l">1 сентября</h3>
+    <div class="overflow-auto">
+        <table class="f6 f5-ns f4-l w-100 mw8 center" cellspacing="0">
+            <thead>
+                <tr>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Время</th>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Тема</th>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Докладчик</th>
+                    <th class="fw4 bb b--black-20 tl pb3 pr3">Город</th>
+                </tr>
+            </thead>
+            <tbody class="lh-copy">
+                {{ $url := "/static/01.09.2019.csv" }}
+                {{ $sep := "," }}
+                {{ range $i, $r := getCSV $sep $url }}
+                <tr>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 0 }}</td>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 1 }}</td>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 2 }}</td>
+                    <td class="pv3 pr3 bb b--black-20">{{ index $r 3 }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</article>
