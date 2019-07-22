@@ -1,8 +1,10 @@
-"hosting": {
-  "public": "public",
-  "ignore": [
-    "firebase.json",
-    "cloudbuild.yaml",
-    "**/.*"
-  ]
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "cloudbuild.yaml",
+      "**/.*"
+    ]
+  }
 }
