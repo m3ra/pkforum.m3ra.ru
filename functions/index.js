@@ -5,6 +5,14 @@ const { check, validationResult } = require('express-validator');
 
 const app = express();
 
+app.get('/health', (req, res) => {
+  res.send('OK');
+});
+
+app.get('/a/health', (req, res) => {
+  res.send('a OK');
+});
+
 app.post('/signup', [check('email').isEmail()], (req, res) => {
   const errors = validationResult(req);
 
