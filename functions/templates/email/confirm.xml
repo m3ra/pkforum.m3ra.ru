@@ -1,0 +1,41 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Roboto"
+             href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" />
+    <mj-attributes>
+      <mj-class name="bg-dark-green" background-color="#137752" />
+      <mj-class name="near-white" color="#f4f4f4" />
+      <mj-all font-family="Roboto" font-weight="300" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section mj-class="bg-dark-green">
+      <mj-column>
+        <mj-text mj-class="near-white"
+                 font-size="20px"
+                 align="center">
+          Прикладной Концептуальный Форум
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-text>
+          Для завершения регистрации, пожалуйста, подтвердите свой адрес
+          электронной почты: <b>{{email}}</b>
+        </mj-text>
+        <mj-button mj-class="bg-dark-green near-white"
+                   href="https://pkforum.m3ra.ru/a/confirm/?h={{hash}}&e={{email}}">
+          Подтвердить
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section mj-class="bg-dark-green">
+      <mj-column>
+        <mj-button mj-class="bg-dark-green" align="right" font-size="18px">
+          pkforum@m3ra.ru
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
