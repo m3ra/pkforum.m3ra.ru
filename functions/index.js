@@ -26,7 +26,7 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   hash.update(email + functions.config().hash.salt);
 
   const data = {
-    from: functions.config().from,
+    from: functions.config().mailgun.from,
     to: email,
     subject: functions.config().subject.confirm,
     template: functions.config().template.confirm,
