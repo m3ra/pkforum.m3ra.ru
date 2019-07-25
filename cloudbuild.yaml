@@ -1,6 +1,9 @@
 steps:
   - name: 'gcr.io/$PROJECT_ID/hugo'
+
   - name: 'gcr.io/cloud-builders/npm'
     args: ['--prefix', 'functions', 'install', 'functions']
+    waitFor: ['-']
+
   - name: 'gcr.io/$PROJECT_ID/firebase'
     args: ['deploy', '--project', '$PROJECT_ID']
