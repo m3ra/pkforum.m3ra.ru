@@ -30,8 +30,8 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
     to: email,
     subject: functions.config().subject.confirm,
     template: functions.config().template.confirm,
-    'v:email': encodeURIcomponent(email),
-    'v:hash': encodeURIcomponent(hash.digest('hex'))
+    'v:email': encodeURIComponent(email),
+    'v:hash': encodeURIComponent(hash.digest('hex'))
   };
 
   mailgun.messages().send(data, (err, body) => {
