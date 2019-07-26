@@ -13,7 +13,7 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
-    return res.redirect(422, functions.config().url.error);
+    return res.redirect(functions.config().url.error);
   }
 
   const email = req.body.email;
