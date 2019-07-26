@@ -8,7 +8,6 @@ const app = express();
 app.get('/a/health', (req, res) => {
   res.send('OK');
 });
-
 app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   const errors = validationResult(req);
 
@@ -22,8 +21,8 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
     domain: functions.config().mailgun.domain
   });
 
-  const hash = crypto.createHash('sha256');
-  hash.update(email + functions.config().hash.salt);
+  const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
+  const digest = hmac.update(email).digest('hex');
 
   const data = {
     from: functions.config().mailgun.from,
@@ -31,15 +30,69 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
     subject: functions.config().subject.confirm,
     template: functions.config().template.confirm,
     'v:email': encodeURIComponent(email),
-    'v:hash': encodeURIComponent(hash.digest('hex'))
+    'v:hash': encodeURIComponent(digest)
   };
 
   mailgun.messages().send(data, (err, body) => {
-    console.log(err, body);
+    if (err) {
+      console.log(err);
+      return res.redirect(functions.config().url.error);
+    }
+    console.log(body);
     return res.redirect(functions.config().url.confirm);
   });
 
   return null;
+});
+app.get('/a/confirm', (req, res) => {
+  const email = req.query.e;
+  const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
+  const digest = hmac.update(email).digest('hex');
+
+  if (req.query.h !== digest) {
+    return res.redirect(functions.config().url.error);
+  }
+
+  const mailgun = require('mailgun-js')({
+    apiKey: functions.config().mailgun.apikey,
+    domain: functions.config().mailgun.domain
+  });
+
+  const list = mailgun.lists(functions.config().mailgun.list);
+  const data = {
+    subscribed: true,
+    address: email
+  };
+
+  list.members().create(data, (err, body) => {
+    if (err) {
+      console.log(err);
+      return res.redirect(functions.config().url.error);
+    }
+
+    console.log(body);
+    const data = {
+      from: functions.config().mailgun.from,
+      to: email,
+      subject: functions.config().subject.onboard,
+      template: functions.config().template.onboard,
+      'v:email': encodeURIComponent(email)
+    };
+
+    mailgun.messages().send(data, (err, body) => {
+      if (err) {
+        console.log(err);
+        return res.redirect(functions.config().url.error);
+      }
+      console.log(body);
+      return res.redirect(functions.config().url.onboard);
+    });
+
+    return null;
+  });
+
+  return null;
+
 });
 
 exports.app = functions.https.onRequest(app);
