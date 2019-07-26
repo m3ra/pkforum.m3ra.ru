@@ -2,13 +2,13 @@
 <html lang="{{ .Site.LanguageCode | default "ru" }}">
   {{- partial "head.html" . -}}
   <body class="sans-serif fw3">
-    {{- partial "header.html" . -}}
+    {{ block "header" . }}{{- partial "header.html" . -}}{{ end }}
     {{- if .IsHome }}
       {{- partial "schedule.html" . -}}
       {{- partial "register.html" . -}}
     {{- else }}
       {{- block "main" . }}{{- end }}
     {{- end }}
-    {{- partial "footer.html" . -}}
+    {{ block "footer" . }}{{- partial "footer.html" . -}}{{ end }}
   </body>
 </html>

@@ -1,0 +1,15 @@
+{{ define "header" }}
+<h1 class="f3 f2-ns f-4-l fw3 mv5 tc sans-serif dark-green">
+  {{ .Title }}
+</h1>
+{{ end }}
+{{ define "main" }}
+<article class="f5 f4-ns f3-l w-100 mw8 center tc measure lh-copy">
+{{ .Content }}
+</article>
+{{ end }}
+{{ define "footer" }}
+<div class="flex items-center justify-center mt5">
+<a href="/" class="f5 f4-l link dim br2 ph3 pv2 mb2 dib white bg-dark-green">На главную</a>
+</div>
+{{ end }}
