@@ -13,5 +13,6 @@ firebase functions:config:set \
     template.success="template.success" \
     url.confirm="https://example.com/confirm" \
     url.success="https://example.com/success" \
+    url.error="https://example.com/error" \
     hash.salt="some random string"
 ```
