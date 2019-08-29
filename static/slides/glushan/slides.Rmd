@@ -1,0 +1,167 @@
+---
+title: "Реформа государственного управления в условиях переходного периода"
+author: "Александр Глушан"
+output: revealjs::revealjs_presentation
+---
+
+## Общая структура государственной власти
+
+```{r, echo=FALSE}
+DiagrammeR::grViz("
+digraph d {
+
+graph [layout = dot,
+       rankdir = LR,
+       fontname = Roboto,
+       fontsize = 26]
+
+node [fontname = Roboto,
+      fontsize = 26,
+      shape = rectangle,
+      style = rounded,
+      color = '#137752']
+
+edge [fontname = Roboto,
+      fontsize = 26,
+      color = '#137752']
+
+A [label = 'Администрация\nпрезидента\n\nАП']
+B [label = 'Государственный\nсовет по\nстратегическому\nпланированию\n\nГП']
+
+A -> B [dir = both]
+}
+")
+```
+
+## \
+
+```{r, echo=FALSE}
+DiagrammeR::grViz("
+graph d {
+
+graph [layout = dot,
+       fontname = Roboto,
+       fontsize = 26]
+
+node [fontname = Roboto,
+      fontsize = 26,
+      shape = rectangle,
+      style = rounded,
+      color = '#137752']
+
+edge [fontname = Roboto,
+      fontsize = 26,
+      color = '#137752']
+
+A [label = 'Государственный совет по\nстратегическому планированию\nГП']
+
+B [label = 'Росреестр']
+C [label = 'Росстат']
+D [label = 'Росстандарт']
+
+E [label = 'Департамент\nправового\nобеспечения']
+F [label = 'Департамент\nгосударственной\nбезопасности']
+G [label = 'Департамент\nфинансового\nобеспечения']
+
+{B C D} -- A
+A -- {E F G}
+}
+")
+```
+
+## \
+
+```{r, echo=FALSE}
+DiagrammeR::grViz("
+graph d {
+
+graph [layout = dot,
+       fontname = Roboto,
+       fontsize = 26]
+
+node [fontname = Roboto,
+      fontsize = 26,
+      shape = rectangle,
+      style = rounded,
+      color = '#137752']
+
+edge [fontname = Roboto,
+      fontsize = 26,
+      color = '#137752']
+
+A [label = 'Администрация\nпрезидента\nАП']
+
+B [label = 'Управление\nвнешней\nполитики']
+C [label = 'Управление\nмежнационального\nи приграничного\nсотрудничества']
+
+E [label = 'Управление\nрегионального\nразвития']
+F [label = 'Управление\nбезопасности\nпрезидента']
+G [label = 'Контрольно-\nревизионное\nуправление']
+
+{B C} -- A
+A -- {E F G}
+}
+")
+```
+
+## Министерства
+
+1. Образования
+2. Энергетики
+3. Сельского хозяйства
+4. Лесного хозяйства
+5. Рыбного хозяйства
+6. Внутренних дел
+7. Иностранных дел
+8. Обороны
+9. Культуры
+10. Морского флота
+
+## Министерства {#ministry2}
+
+11. Транспорта
+12. Тяжёлой промышленности
+13. Лёгкой промышленности
+14. Точного машиностроения
+15. Недропользования
+16. Внешней торговли
+17. Капитального строительства
+18. Здравоохранения и социальной защиты
+19. Информационной безопасности и связи
+
+## \
+
+```{r, echo=FALSE}
+DiagrammeR::grViz("
+graph d {
+
+graph [layout = dot,
+       fontname = Roboto]
+
+node [fontname = Roboto,
+      shape = rectangle,
+      style = rounded,
+      color = '#137752']
+
+edge [fontname = Roboto,
+      color = '#137752']
+
+A [label = 'Министерство']
+
+B [label = 'Федеральное\nпредставительство']
+C [label = 'Региональные\nпредставительства']
+
+D [label = '1. Аппарат министра\n2. Профильная госкорпорация\n3. Орган контроля и надзора\n4. Прокурорский отдел\n5. Служба навигаторов']
+E [label = '1. Аппарат представительства\n2. Филиал госкорпорации\n3. Региональный орган контроля\nи надзора\n4. Служба операторов']
+
+A -- {B C}
+B -- D
+C -- E
+}
+")
+```
+
+## Вопросы и предложения
+
+* glushansasha@rambler.ru
+* pkforum@m3ra.ru
