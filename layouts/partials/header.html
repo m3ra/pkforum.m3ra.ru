@@ -1,12 +1,14 @@
+{{ if .IsHome }}
 <article class="vh-50 vh-100-l dt w-100 bg-dark-green">
-    <div class="dtc v-mid near-white ph3 ph4-m ph5-l">
-        {{ if .IsHome }}
-        <h1 class="f2 f1-ns f-5-l fw3 tc sans-serif">
-            {{ .Site.Title }}
-        </h1>
-        <h2 class="f3 f2-ns f-4-l fw3 tc sans-serif">
-            {{ .Title }}
-        </h2>
-        {{ end }}
-    </div>
+  <div class="dtc v-mid near-white ph3 ph4-m ph5-l">
+    <h1 class="f2 f1-ns f-5-l fw3 tc sans-serif">
+      {{ .Site.Title }}
+    </h1>
+    <h2 class="f3 f2-ns f-4-l fw3 tc sans-serif">
+      {{ .Title }}
+    </h2>
+  </div>
 </article>
+{{ else }}
+{{- partial "breadcrumb.html" . -}}
+{{ end }}
