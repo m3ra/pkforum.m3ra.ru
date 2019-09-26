@@ -8,7 +8,7 @@
 {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
 {{ end }}
 {{ if eq .p1 .p2 }}
-<li class="dib mr2 f3 f2-ns near-white">{{ .p1.Title }}</li>
+<li class="dib mr2 f3 f2-ns pa2 near-white">{{ .p1.Title }}</li>
 {{ else }}
 <li class="dib mr2">
   <a class="f3 f2-ns db pa2 link dim light-green" href="{{ .p1.Permalink }}">{{ if .p1.IsHome }}{{ .p1.Site.Title }}{{ else }}{{ .p1.Title }}{{ end }}</a>
