@@ -2,3 +2,6 @@ baseURL = "https://pkforum.m3ra.ru/"
 languageCode = "ru-ru"
 DefaultContentLanguage = "ru"
 title = "Прикладной Концептуальный Форум"
+
+[taxonomies]
+  speaker = "speakers"
