@@ -9,7 +9,9 @@
     <div class="pl3 flex-auto">
       {{ range .Params.speakers }}
       {{ $name := . }}
-      <a href="/speakers/{{ $name | urlize }}" class="link dark-green underline-hover dim">{{ $name }}</a>
+      {{ with ($.Site.GetPage (printf "/speakers/%s" $name)) }}
+      <a href="{{.Permalink}}" class="link dark-green underline-hover dim">{{.Title}}</a>
+      {{ end }}
       {{ end }}
     </div>
     <div class="pr3">

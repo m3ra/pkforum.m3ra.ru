@@ -2,7 +2,7 @@
 title: "Вступительное слово"
 weight: 1
 draft: false
-speakers: ["Глеб Деев"]
+speakers: ["gleb-deev"]
 ---
 
 {{< youtube ovzO8-Q7sfc >}}

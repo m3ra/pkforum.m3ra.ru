@@ -2,7 +2,7 @@
 title: "Методология осмысления русской глобальной идеи"
 weight: 4
 draft: false
-speakers: ["Николай Смирнов"]
+speakers: ["nikolay-smirnov"]
 ---
 
 {{< youtube 5eHq8nJxHAA >}}
