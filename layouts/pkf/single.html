@@ -37,8 +37,8 @@
 
 <div class="cf">
   {{ with .NextInSection }}
-  <div class="fl w-50 tc">
-    <a href="{{ .Permalink }}" class="f3 f2-ns f-4-l no-underline dark-green bg-animate hover-bg-dark-green hover-white inline-flex items-center pa3 ba border-box mr4" title="{{ .Title }}">
+  <div class="fl w-50 tl">
+    <a href="{{ .Permalink }}" class="f3 f2-ns f-4-l no-underline dark-green bg-animate hover-bg-dark-green hover-white inline-flex items-center pa3 ba border-box ml4" title="{{ .Title }}">
       <svg class="w2" viewBox="0 0 32 32" style="fill:currentcolor">
         <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
       </svg>
@@ -47,7 +47,7 @@
   </div>
   {{ end }}
   {{ with .PrevInSection }}
-  <div class="fr w-50 tc">
+  <div class="fr w-50 tr">
     <a href="{{ .Permalink }}" class="f3 f2-ns f-4-l no-underline dark-green bg-animate hover-bg-dark-green hover-white inline-flex items-center pa3 ba border-box mr4" title="{{ .Title }}">
       <span class="pr2">Следующий доклад</span>
       <svg class="w2" viewBox="0 0 32 32" style="fill:currentcolor">
