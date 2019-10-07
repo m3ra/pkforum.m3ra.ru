@@ -17,7 +17,7 @@
     <div class="pr3">
       {{ with .Resources.GetMatch "*.pdf" }}
       <a class="dib link underline dark-green dim" href="{{.Permalink}}">Скачать слайды</a>
-      <a class="dib ml4 link underline dark-green dim" href="http://docs.google.com/viewer?{{ (querify "url" .Permalink ) | safeURL }}">Смотреть онлайн</a>
+      <a class="dib ml4 link underline dark-green dim" href="https://docs.google.com/viewer?{{ (querify "url" .Permalink ) | safeURL }}">Смотреть онлайн</a>
       {{ end }}
     </div>
   </li>
