@@ -3,6 +3,7 @@ title: "Методология осмысления русской глобал�
 weight: 4
 draft: false
 speakers: ["nikolay-smirnov"]
+videos:
+  доклад: 5eHq8nJxHAA
+  обсуждение доклада: J0iMLRmq3fc
 ---
-
-{{< youtube 5eHq8nJxHAA >}}

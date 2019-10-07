@@ -3,7 +3,7 @@ title: "Как культура формирует психику и как со
 weight: 3
 draft: false
 speakers: ["andrey-senchukov"]
+videos:
+  доклад: LXjXQ1tm4j4
+  обсуждение доклада: AFg1DaAAIS0
 ---
-
-{{< youtube LXjXQ1tm4j4 >}}
-

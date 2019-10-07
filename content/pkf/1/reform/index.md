@@ -3,6 +3,7 @@ title: "Реформа государственных институтов в у
 weight: 2
 draft: false
 speakers: ["alexandr-glushan"]
+videos:
+  доклад: F_zSfVS-gVc
+  обсуждение доклада: U7GKgH721ew
 ---
-
-{{< youtube F_zSfVS-gVc >}}
