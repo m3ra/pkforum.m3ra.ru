@@ -13,6 +13,11 @@
     </h1>
     <h2 class="f3 f2-ns f-4-l fw3 tc sans-serif">
       {{ .Title }}
+      {{ with .Site.GetPage "section" "pkf" }}
+      {{ range first 1 .Pages.ByDate.Reverse }}
+      {{ .Title }}
+      {{ end }}
+      {{ end }}
     </h2>
   </div>
 </article>
