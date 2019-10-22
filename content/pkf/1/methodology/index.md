@@ -1,6 +1,6 @@
 ---
 title: "Основы методологии познания и методологического мышления"
-weight: 5
+date: "01 Sep 19 14:00 MSK"
 draft: false
 speakers: ["eduard-rahmatullin"]
 videos:

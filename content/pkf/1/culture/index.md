@@ -1,6 +1,6 @@
 ---
 title: "Как культура формирует психику и как создать альтернативу"
-weight: 3
+date: "31 Aug 19 14:00 MSK"
 draft: false
 speakers: ["andrey-senchukov"]
 videos:
