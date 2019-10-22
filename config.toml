@@ -7,3 +7,13 @@ buildFuture = true
 
 [taxonomies]
   speaker = "speakers"
+
+[menu]
+  [[menu.main]]
+    name = "Конференции"
+    url = "/pkf/"
+    weight = 1
+  [[menu.main]]
+    name = "Докладчики"
+    url = "/speakers/"
+    weight = 2
