@@ -3,6 +3,17 @@ languageCode = "ru-ru"
 DefaultContentLanguage = "ru"
 title = "Прикладной Концептуальный Форум"
 disqusShortname = "pkforum"
+buildFuture = true
 
 [taxonomies]
   speaker = "speakers"
+
+[menu]
+  [[menu.main]]
+    name = "Конференции"
+    url = "/pkf/"
+    weight = 1
+  [[menu.main]]
+    name = "Докладчики"
+    url = "/speakers/"
+    weight = 2

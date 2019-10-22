@@ -1,6 +1,6 @@
 ---
 title: "Методология осмысления русской глобальной идеи"
-weight: 4
+date: "31 Aug 19 16:00 MSK"
 draft: false
 speakers: ["nikolay-smirnov"]
 videos:

@@ -1,4 +1,11 @@
 {{ if .IsHome }}
+<header class="bg-dark-green fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+  <nav class="f6 f5-ns f4-l fw4 ttu tracked tr">
+    {{ range .Site.Menus.main }}
+    <a class="link dim white dib mr3" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>
 <article class="vh-50 vh-100-l dt w-100 bg-dark-green">
   <div class="dtc v-mid near-white ph3 ph4-m ph5-l">
     <h1 class="f2 f1-ns f-5-l fw3 tc sans-serif">
@@ -6,6 +13,11 @@
     </h1>
     <h2 class="f3 f2-ns f-4-l fw3 tc sans-serif">
       {{ .Title }}
+      {{ with .Site.GetPage "section" "pkf" }}
+      {{ range first 1 .Pages.ByDate.Reverse }}
+      {{ .Title }}
+      {{ end }}
+      {{ end }}
     </h2>
   </div>
 </article>

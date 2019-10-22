@@ -1,6 +1,6 @@
 ---
 title: "Реформа государственных институтов в условиях переходного периода"
-weight: 2
+date: "31 Aug 19 12:00 MSK"
 draft: false
 speakers: ["alexandr-glushan"]
 videos:

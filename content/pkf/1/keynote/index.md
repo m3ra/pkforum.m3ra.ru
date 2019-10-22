@@ -1,6 +1,6 @@
 ---
 title: "Вступительное слово"
-weight: 1
+date: "31 Aug 19 11:45 MSK"
 draft: false
 speakers: ["gleb-deev"]
 videos:
