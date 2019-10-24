@@ -1,5 +1,5 @@
 ---
 title: "Вячеслав Кравчук"
-e-mail: "kravchuk.vyacheslav@mail.ru"
+email: "kravchuk.vyacheslav@mail.ru"
 loc: "Москва"
 ---
