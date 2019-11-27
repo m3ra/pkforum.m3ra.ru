@@ -8,6 +8,7 @@ const app = express();
 app.get('/a/health', (req, res) => {
   res.send('OK');
 });
+
 app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   const errors = validationResult(req);
 
@@ -22,7 +23,7 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   });
 
   const list = mailgun.lists(functions.config().mailgun.list);
-  list.members(email).info((err, body) => {
+  return list.members(email).info((err, body) => {
     if (!err) { // Member already exists in mailing list.
       const data = {
         from: functions.config().mailgun.from,
@@ -39,32 +40,31 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
         console.log(body);
         return res.redirect(functions.config().url.onboard);
       });
+    } else {
+      const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
+      const digest = hmac.update(email).digest('hex');
+
+      const data = {
+        from: functions.config().mailgun.from,
+        to: email,
+        subject: functions.config().subject.confirm,
+        template: functions.config().template.confirm,
+        'v:email': encodeURIComponent(email),
+        'v:hash': encodeURIComponent(digest)
+      };
+
+      mailgun.messages().send(data, (err, body) => {
+        if (err) {
+          console.log(err);
+          return res.redirect(functions.config().url.error);
+        }
+        console.log(body);
+        return res.redirect(functions.config().url.confirm);
+      });
     }
   });
-
-  const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
-  const digest = hmac.update(email).digest('hex');
-
-  const data = {
-    from: functions.config().mailgun.from,
-    to: email,
-    subject: functions.config().subject.confirm,
-    template: functions.config().template.confirm,
-    'v:email': encodeURIComponent(email),
-    'v:hash': encodeURIComponent(digest)
-  };
-
-  mailgun.messages().send(data, (err, body) => {
-    if (err) {
-      console.log(err);
-      return res.redirect(functions.config().url.error);
-    }
-    console.log(body);
-    return res.redirect(functions.config().url.confirm);
-  });
-
-  return null;
 });
+
 app.get('/a/confirm', (req, res) => {
   const email = req.query.e;
   const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
@@ -85,7 +85,7 @@ app.get('/a/confirm', (req, res) => {
     address: email
   };
 
-  list.members().create(data, (err, body) => {
+  return list.members().create(data, (err, body) => {
     if (err) {
       console.log(err);
       return res.redirect(functions.config().url.error);
@@ -100,7 +100,7 @@ app.get('/a/confirm', (req, res) => {
       'v:email': encodeURIComponent(email)
     };
 
-    mailgun.messages().send(data, (err, body) => {
+    return mailgun.messages().send(data, (err, body) => {
       if (err) {
         console.log(err);
         return res.redirect(functions.config().url.error);
@@ -108,12 +108,7 @@ app.get('/a/confirm', (req, res) => {
       console.log(body);
       return res.redirect(functions.config().url.onboard);
     });
-
-    return null;
   });
-
-  return null;
-
 });
 
 exports.app = functions.https.onRequest(app);
