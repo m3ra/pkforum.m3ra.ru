@@ -21,6 +21,27 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
     domain: functions.config().mailgun.domain
   });
 
+  const list = mailgun.lists(functions.config().mailgun.list);
+  list.members(email).info((err, body) => {
+    if (!err) { // Member already exists in mailing list.
+      const data = {
+        from: functions.config().mailgun.from,
+        to: email,
+        subject: functions.config().subject.onboard,
+        template: functions.config().template.onboard,
+      };
+
+      mailgun.messages().send(data, (err, body) => {
+        if (err) {
+          console.log(err);
+          return res.redirect(functions.config().url.error);
+        }
+        console.log(body);
+        return res.redirect(functions.config().url.onboard);
+      });
+    }
+  });
+
   const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
   const digest = hmac.update(email).digest('hex');
 
