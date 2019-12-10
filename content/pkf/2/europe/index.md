@@ -3,4 +3,7 @@ title: "КОБ из России — код для Запада (Стратег�
 date: "30 Nov 19 12:00 MSK"
 draft: false
 speakers: ["pavel-fuks"]
+videos:
+  доклад: RVUpQYrZajU
+  обсуждение доклада: dqQyof3zUFs
 ---
