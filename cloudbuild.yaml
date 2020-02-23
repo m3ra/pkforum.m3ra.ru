@@ -1,9 +1,16 @@
 steps:
+  # Build site with Hugo
   - name: 'gcr.io/$PROJECT_ID/hugo'
 
+  # Install functions' dependencies
   - name: 'gcr.io/cloud-builders/npm'
     args: ['--prefix', 'functions', 'install', 'functions']
     waitFor: ['-']
 
+  # Build the Firebase image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/firebase', '.' ]
+
+  # Deploy to Firebase
   - name: 'gcr.io/$PROJECT_ID/firebase'
     args: ['deploy', '--project', '$PROJECT_ID']
