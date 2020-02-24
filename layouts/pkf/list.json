@@ -2,8 +2,7 @@
   {{- range first 1 .Sections.ByDate.Reverse -}}
     {{- if gt .Date.Unix now.Unix -}}
       {{ $first := index (first 1 .Pages.ByDate) 0 }}
-      {{ $firstDict := dict "title" $first.Title "date" $first.Date }}
-      {{ dict "title" .Title "date" .Date "start" $firstDict | jsonify }}
+      {{ dict "title" .Title "start_time" ($first.Date.Format "15:04 MST") | jsonify }}
     {{- else -}}
       null
     {{- end -}}
