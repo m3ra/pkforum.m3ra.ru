@@ -1,6 +1,7 @@
 const crypto = require('crypto');
-const functions = require('firebase-functions');
 const express = require('express');
+const functions = require('firebase-functions');
+const https = require('https');
 const { check, validationResult } = require('express-validator');
 
 const app = express();
@@ -25,20 +26,28 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   const list = mailgun.lists(functions.config().mailgun.list);
   return list.members(email).info((err, body) => {
     if (!err) { // Member already exists in mailing list.
-      const data = {
-        from: functions.config().mailgun.from,
-        to: email,
-        subject: functions.config().subject.onboard,
-        template: functions.config().template.onboard,
-      };
-
-      mailgun.messages().send(data, (err, body) => {
-        if (err) {
-          console.log(err);
-          return res.redirect(functions.config().url.error);
-        }
-        console.log(body);
-        return res.redirect(functions.config().url.onboard);
+      return https.get(functions.config().data.onboard, (result) => {
+        let vars = '';
+        result.on('data', (chunk) => {
+          vars += chunk;
+        });
+        const data = {
+          from: functions.config().mailgun.from,
+          to: email,
+          subject: functions.config().subject.onboard,
+          template: functions.config().template.onboard,
+          'h:X-Mailgun-Variables': vars
+        };
+        mailgun.messages().send(data, (err, body) => {
+          if (err) {
+            console.error(err);
+            return res.redirect(functions.config().url.error);
+          }
+          console.log(body);
+          return res.redirect(functions.config().url.onboard);
+        });
+      }).on('error', (e) => {
+        console.error(e);
       });
     } else {
       const hmac = crypto.createHmac('sha256', functions.config().hash.salt);
@@ -92,21 +101,28 @@ app.get('/a/confirm', (req, res) => {
     }
 
     console.log(body);
-    const data = {
-      from: functions.config().mailgun.from,
-      to: email,
-      subject: functions.config().subject.onboard,
-      template: functions.config().template.onboard,
-      'v:email': encodeURIComponent(email)
-    };
-
-    return mailgun.messages().send(data, (err, body) => {
-      if (err) {
-        console.log(err);
-        return res.redirect(functions.config().url.error);
-      }
-      console.log(body);
-      return res.redirect(functions.config().url.onboard);
+    return https.get(functions.config().data.onboard, (result) => {
+      let vars = '';
+      result.on('data', (chunk) => {
+        vars += chunk;
+      });
+      const data = {
+        from: functions.config().mailgun.from,
+        to: email,
+        subject: functions.config().subject.onboard,
+        template: functions.config().template.onboard,
+        'h:X-Mailgun-Variables': vars
+      };
+      mailgun.messages().send(data, (err, body) => {
+        if (err) {
+          console.error(err);
+          return res.redirect(functions.config().url.error);
+        }
+        console.log(body);
+        return res.redirect(functions.config().url.onboard);
+      });
+    }).on('error', (e) => {
+      console.error(e);
     });
   });
 });

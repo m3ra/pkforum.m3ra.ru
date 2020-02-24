@@ -1,5 +1,7 @@
 ---
 title: "Архив конференций"
-draft: false
+outputs:
+- html
+- json
 ---
 

@@ -1,0 +1,12 @@
+{{- if .Sections -}}
+  {{- range first 1 .Sections.ByDate.Reverse -}}
+    {{- if gt .Date.Unix now.Unix -}}
+      {{ $first := index (first 1 .Pages.ByDate) 0 }}
+      {{ dict "title" .Title "start_time" ($first.Date.Format "15:04 MST") | jsonify }}
+    {{- else -}}
+      null
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  null
+{{- end -}}
