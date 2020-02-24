@@ -1,0 +1,13 @@
+{{- if .Sections -}}
+  {{- range first 1 .Sections.ByDate.Reverse -}}
+    {{- if gt .Date.Unix now.Unix -}}
+      {{ $first := index (first 1 .Pages.ByDate) 0 }}
+      {{ $firstDict := dict "title" $first.Title "date" $first.Date }}
+      {{ dict "title" .Title "date" .Date "start" $firstDict | jsonify }}
+    {{- else -}}
+      null
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  null
+{{- end -}}
