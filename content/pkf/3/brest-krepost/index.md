@@ -1,6 +1,6 @@
 ---
 title: "Брестская крепость — точка сборки"
-date: "20 Feb 20 16:00 MSK"
+date: "29 Feb 20 12:00 MSK"
 draft: false
 speakers: ["arcadiy-rozbash"]
 
