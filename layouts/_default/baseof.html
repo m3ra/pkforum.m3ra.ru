@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "ru" }}">
-  {{- partial "head.html" . -}}
-  <body class="sans-serif fw3">
-    {{ block "header" . }}{{- partial "header.html" . -}}{{ end }}
-    {{- if .IsHome }}
-      {{- partial "schedule.html" . -}}
-      {{- partial "register.html" . -}}
-    {{- else }}
-      {{- block "main" . }}{{- end }}
-    {{- end }}
-    {{ block "footer" . }}{{- partial "footer.html" . -}}{{ end }}
-  </body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+<style>.sans-serif {font-family: 'Roboto';}</style>
+<title>
+{{- if .IsHome }}
+{{ .Site.Title }}
+{{- else }}
+{{ .Title }} &middot; {{ .Site.Title }}
+{{- end }}
+</title>
+<body class="sans-serif fw3">
+
+{{ block "header" . }}
+{{ partial "breadcrumb.html" . }}
+{{ end }}
+
+{{ block "main" . }}
+{{ end }}
+
+{{ block "footer" . }}
+{{ partial "footer.html" . }}
+{{ end }}
