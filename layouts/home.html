@@ -19,7 +19,18 @@
           {{ end }}
         {{ end }}
       </h2>
-      {{ youtube jZFTqjN6XLI }}
+      {{ with .Site.GetPage "section" "pkf" }}
+        {{ range first 1 .Pages.ByDate.Reverse }}
+          {{ range $id, $date := .Params.live }}
+            {{ if eq $date (now.Format "2006-01-02") }}
+              <div class="aspect-ratio aspect-ratio--8x5">
+                <iframe class="aspect-ratio--object" type="text/html" src="https://www.youtube.com/embed/{{ $id }}" allowfullscreen frameborder="0">
+                </iframe>
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
     </div>
   </article>
 {{ end }}
