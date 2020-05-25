@@ -1,6 +1,6 @@
 ---
 title: "Роман Лебедев"
-email: "gdeev9@gmail.com"
-telegram: "NevskieMorji@gmail.com"
+email: "NevskieMorji@gmail.com"
+telegram: "NewSkyMorj"
 loc: "Россия"
 ---
