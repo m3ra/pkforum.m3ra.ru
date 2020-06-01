@@ -1,9 +1,7 @@
 ---
-title: "Заключительное слово"
+title: "О скором начале шестого Прикладного Концептуального Форума"
 date: "31 May 20 16:00 MSK"
 speakers: ["moderator"]
 videos:
-  доклад: YCSdBYUmVec
-  доклад: 5ufvcNX8-kM 
-  доклад: cRs4i-9W1E0
+  доклад: YCSdBYUmVec 
 ---
