@@ -4,4 +4,7 @@ title: "Курение как орудие геноцида против сам�
 date: "30 May 20 14:00 MSK"
 draft: false
 speakers: ["andrey-senchukov"] 
+videos:
+  доклад: qM0eGXGgNjw 
+  обсуждение доклада: qM0eGXGgNjw 
 ---
