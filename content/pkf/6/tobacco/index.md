@@ -6,5 +6,5 @@ draft: false
 speakers: ["andrey-senchukov"] 
 videos:
   доклад: qM0eGXGgNjw 
-  обсуждение доклада: qM0eGXGgNjw 
+  обсуждение доклада: kE4Cef4cdu4 
 ---
