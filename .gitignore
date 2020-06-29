@@ -66,3 +66,4 @@ node_modules/
 
 # Hugo public directory
 public/
+/hugo.exe
