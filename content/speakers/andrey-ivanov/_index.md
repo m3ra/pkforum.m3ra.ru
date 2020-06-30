@@ -1,5 +1,5 @@
 ---
 title: "Андрей Иванов" 
 email: "pobedit.andrey@mail.ru"
-loc: "Россия" 
+loc: "Беларуссия" 
 ---
