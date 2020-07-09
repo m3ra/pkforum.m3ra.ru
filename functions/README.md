@@ -6,6 +6,7 @@
 firebase functions:config:set \
     mailgun.apikey="MAILGUN_API_KEY" \
     mailgun.domain="YOUR_DOMAIN_NAME" \
+    mailgun.host="api.eu.mailgun.net" \
     mailgun.from="Your Name <your@email.com>" \
     mailgun.list="mylist@mydomain.com" \
     subject.confirm="Subject for Confirmation Message" \

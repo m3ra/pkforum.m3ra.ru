@@ -20,7 +20,8 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   const email = req.body.email;
   const mailgun = require('mailgun-js')({
     apiKey: functions.config().mailgun.apikey,
-    domain: functions.config().mailgun.domain
+    domain: functions.config().mailgun.domain,
+    host: functions.config().mailgun.host
   });
 
   const list = mailgun.lists(functions.config().mailgun.list);
