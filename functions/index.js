@@ -4,6 +4,12 @@ const functions = require('firebase-functions');
 const https = require('https');
 const { check, validationResult } = require('express-validator');
 
+const mailgun = require('mailgun-js')({
+  apiKey: functions.config().mailgun.apikey,
+  domain: functions.config().mailgun.domain,
+  host: functions.config().mailgun.host
+});
+
 const app = express();
 
 app.get('/a/health', (req, res) => {
@@ -18,11 +24,6 @@ app.post('/a/signup', [check('email').isEmail()], (req, res) => {
   }
 
   const email = req.body.email;
-  const mailgun = require('mailgun-js')({
-    apiKey: functions.config().mailgun.apikey,
-    domain: functions.config().mailgun.domain,
-    host: functions.config().mailgun.host
-  });
 
   const list = mailgun.lists(functions.config().mailgun.list);
   return list.members(email).info((err, body) => {
@@ -84,11 +85,6 @@ app.get('/a/confirm', (req, res) => {
   if (req.query.h !== digest) {
     return res.redirect(functions.config().url.error);
   }
-
-  const mailgun = require('mailgun-js')({
-    apiKey: functions.config().mailgun.apikey,
-    domain: functions.config().mailgun.domain
-  });
 
   const list = mailgun.lists(functions.config().mailgun.list);
   const data = {
