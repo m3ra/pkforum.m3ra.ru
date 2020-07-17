@@ -3,4 +3,6 @@ title: "О проекте самоуправляемой социальной с
 date: "11 Jul 20 16:00 MSK"
 draft: false
 speakers: ["aleksei-c"]
+videos:
+  доклад: J9uMsA_fq68
 ---
