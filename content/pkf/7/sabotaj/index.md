@@ -3,4 +3,7 @@ title: "Прокрастинация, саботаж и психотравмы, 
 date: "18 Jul 20 12:00 MSK"
 draft: false
 speakers: ["aleksei-c"]
+videos:
+  доклад: qTjNoxaLN18 
+  обсуждение доклада: -SORhvi5HVA 
 ---
