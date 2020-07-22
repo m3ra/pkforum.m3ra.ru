@@ -1,6 +1,6 @@
 ---
 title: "Возможные варианты развития событий в концептуальном движении"
-date: "02 Aug 20 16:00 MSK"
+date: "03 Aug 20 12:00 MSK"
 draft: false
 speakers: ["mihail-velichko"]
 ---
