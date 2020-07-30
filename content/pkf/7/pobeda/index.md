@@ -3,4 +3,7 @@ title: "Победа на личном фронте: как выйти из од
 date: "25 Jul 20 15:00 MSK"
 draft: false
 speakers: ["aleksei-c"]
+videos:
+  доклад: v2CgTQa_YLc 
+  обсуждение доклада: MGFI-Bxn1Kk
 ---
