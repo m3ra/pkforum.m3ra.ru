@@ -3,4 +3,7 @@ title: "Харьковская общественная инициатива. О
 date: "26 Jul 20 19:00 MSK"
 draft: false
 speakers: ["vladislav-lozovoy"]
+videos:
+  доклад: DsSgDvyuhts 
+  обсуждение доклада: Skchq4G_cdY
 ---
