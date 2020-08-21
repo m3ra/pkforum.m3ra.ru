@@ -1,6 +1,6 @@
 ---
 title: " Алексей Усов"
-loc: "Россия"
+loc: "Украина" 
 email: "Ussov@list.ru"
 telegram: "AlexUssov"
 ---
