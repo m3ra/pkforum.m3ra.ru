@@ -3,4 +3,7 @@ title: "Целостность и человечность. Причины по�
 date: "24 Aug 20 11:00 MSK"
 draft: false
 speakers: ["evgeniy-belyakov"] 
+videos:
+  доклад: 9sBIdQMNRbQ 
+  обсуждение доклада:  wmvpZvtsIgE 
 ---

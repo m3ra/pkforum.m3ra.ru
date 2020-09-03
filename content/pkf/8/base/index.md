@@ -3,4 +3,7 @@ title: "Формирование понятийной базы качества 
 date: "24 Aug 20 09:30 MSK"
 draft: false
 speakers: ["ctanislav-jukov"] 
+videos:
+  доклад: g6U-tSVOIhc 
+  обсуждение доклада:  pDIz3GQ4bd4 
 ---
