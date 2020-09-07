@@ -3,4 +3,7 @@ title: "Интеграция духовных учений и спонтанна
 date: "03 Sep 20 12:00 MSK"
 draft: false
 speakers: ["artem-conyacin"] 
+videos:
+  доклад: I3vfRdx804A 
+  обсуждение доклада: uosmP8E2LXA 
 ---
