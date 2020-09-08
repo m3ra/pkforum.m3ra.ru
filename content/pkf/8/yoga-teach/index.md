@@ -5,5 +5,6 @@ draft: false
 speakers: ["artem-conyacin"] 
 videos:
   доклад: I3vfRdx804A 
-  обсуждение доклада: uosmP8E2LXA 
+  обсуждение доклада (ч.1): uosmP8E2LXA 
+  обсуждение доклада (ч.2): iv05XhUhGc8 
 ---
