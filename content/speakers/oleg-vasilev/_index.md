@@ -1,5 +1,5 @@
 ---
 title: "Олег Васильев"
-loc: "Россия"
+loc: "Украина"
 email: "3edinstvo.knigodel@gmail.com"
 ---
