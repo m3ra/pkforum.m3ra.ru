@@ -1,5 +1,5 @@
 ---
 title: "Андрей Макуха"
-loc: "Россия"
+loc: "Тайланд"
 email: "juterbog.mau@gmail.com"
 ---
