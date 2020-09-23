@@ -3,4 +3,7 @@ title: "О работе издательства Мера и открытии б
 date: "19 Sep 20 12:00 MSK"
 draft: false
 speakers: ["vladimir-pirojcov"]  
+videos:
+  доклад: cUJbeOXgaVs
+  обсуждение доклада: Uvbm9DKjpzw
 ---
