@@ -1,6 +1,6 @@
 ---
 title: "О литотерапии"
-date: "25 Nov 20 12:00 MSK"
+date: "25 Nov 20 19:00 MSK"
 draft: false
 speakers: ["oksana-guselnikova"]
 ---
