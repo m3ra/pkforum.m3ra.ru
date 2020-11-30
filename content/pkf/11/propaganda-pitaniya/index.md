@@ -3,4 +3,7 @@ title: "Как на основании пропаганды питания мо�
 date: "28 Nov 20 14:00 MSK"
 draft: false
 speakers: ["natalya-sadykova"]
+videos:
+  доклад: af5oKYArOAk
+  обсуждение доклада: Nmt7dokFJuM 
 ---
