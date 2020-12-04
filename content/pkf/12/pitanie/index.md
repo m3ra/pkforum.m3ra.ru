@@ -1,6 +1,6 @@
 ---
 title: "Про питание и едание"
-date: "03 Dec 20 19:00 MSK"
+date: "06 Dec 20 20:00 MSK"
 draft: false
 speakers: ["andrey-giznelybov"] 
 ---
