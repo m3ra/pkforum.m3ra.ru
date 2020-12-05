@@ -1,6 +1,6 @@
 ---
 title: "Практика резонансного состояния, как средство защиты внутренней целостности"
-date: "08 Dec 20 13:00 MSK"
+date: "11 Dec 20 13:00 MSK"
 draft: false
 speakers: ["oleg-pokrovskiy"] 
 ---
