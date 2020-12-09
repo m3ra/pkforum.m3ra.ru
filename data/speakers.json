@@ -1,0 +1,308 @@
+{
+	"natalya-sadykova": {
+		"name": "Наталия Садыкова",
+		"email": "ggeellaa@yandex.ru"
+	},
+	"oksana-guselnikova": {
+		"name": "Оксана Гусельникова",
+		"email": "2771713@list.ru",
+		"telegram": "Oksana_guselnikova"
+	},
+	"valentina-reznichenko": {
+		"name": "Валентина Резниченко",
+		"email": "reznichenko_v.kz@mail.ru",
+		"telegram": "TinaR24"
+	},
+	"sergei-sokolov": {
+		"name": "Сергей Соколов",
+		"email": "sokol-info@mail.ru",
+		"telegram": "SokolovSN"
+	},
+	"mechtatel": {
+		"name": "Мечтатель",
+		"email": "nasovesti.ru@gmail.com"
+	},
+	"oleg-chagin": {
+		"name": "Олег Чагин",
+		"email": "olegchagin@gmail.com",
+		"loc": "Москва"
+	},
+	"roman-parahin": {
+		"name": "Роман Парахин",
+		"email": "winnersplatinum@gmail.com",
+		"telegram": "romatrener",
+		"loc": "Россия"
+	},
+	"vladislav-smekalin": {
+		"name": "Владислав Смекалин",
+		"email": "smekalin@mail.ru",
+		"loc": "Россия"
+	},
+	"oleg-afonin": {
+		"name": "Олег Афонин",
+		"email": "infoexchange@mail.ru",
+		"telegram": "Afonin_Oleg_Vasilyevitch",
+		"loc": "Россия"
+	},
+	"gleb-deev": {
+		"name": "Глеб Деев",
+		"email": "gdeev9@gmail.com",
+		"telegram": "gdeev9",
+		"loc": "Москва"
+	},
+	"andrey-macuha": {
+		"name": "Андрей Макуха",
+		"email": "juterbog.mau@gmail.com",
+		"loc": "Тайланд"
+	},
+	"vladimir-pirojcov": {
+		"name": "Владимир Пирожков",
+		"email": "vipspb78@yandex.ru",
+		"loc": "Россия"
+	},
+	"aleksandr-dar": {
+		"name": "Александр Дар",
+		"email": "2666972@gmail.com",
+		"loc": "Россия"
+	},
+	"artem-conyacin": {
+		"name": " Артём Конякин",
+		"email": "artemk0079@gmail.com",
+		"loc": "Украина"
+	},
+	"andrey-usov": {
+		"name": " Алексей Усов",
+		"email": "Ussov@list.ru",
+		"telegram": "AlexUssov",
+		"loc": "Украина"
+	},
+	"andrey-petuhov": {
+		"name": "Андрей Петухов",
+		"email": "and-petukhov@yandex.ru",
+		"loc": "Россия"
+	},
+	"evgeniy-belyakov": {
+		"name": "Евгений Беляков",
+		"email": "aldra@yandex.ru",
+		"loc": "Россия"
+	},
+	"ctanislav-jukov": {
+		"name": "Станислав Жуков",
+		"email": "zhukov.perl@gmail.com",
+		"loc": "Россия"
+	},
+	"vachslav-voznesenskiy": {
+		"name": "Вячеслав Вознесенский",
+		"email": "nero688565@yandex.ru",
+		"loc": "Россия"
+	},
+	"vladislav-lozovoy": {
+		"name": "Владислав Лозовой",
+		"email": "u-pravlenie@mail.ru",
+		"loc": "Украина"
+	},
+	"vladimir-devyatov": {
+		"name": "Владимир Девятов",
+		"email": "dafted@mail.ru",
+		"loc": "Россия"
+	},
+	"aleksei-c": {
+		"name": "Алексей Сучков",
+		"email": "larskael@yandex.ru",
+		"telegram": "Lars_psy",
+		"loc": "Россия"
+	},
+	"andrey-ivanov": {
+		"name": "Андрей Иванов",
+		"email": "pobedit.andrey@mail.ru",
+		"loc": "Беларусь"
+	},
+	"pavel-ryabev": {
+		"name": "Павел Рябцев",
+		"email": "79162900078@ya.ru",
+		"loc": "Россия"
+	},
+	"sergei-mamchur": {
+		"name": "Сергей Мамчур",
+		"email": "synco@iiiha.com",
+		"telegram": "SergeyMamchur",
+		"loc": "Украина"
+	},
+	"moderator": {
+		"name": "Модератор",
+		"email": "pkforum@m3ra.ru",
+		"telegram": "mera_kob",
+		"loc": "Россия"
+	},
+	"mihail-beregovih": {
+		"name": "Михаил Береговых",
+		"email": "tdnagor@mail.ru",
+		"loc": "Россия"
+	},
+	"dmitri-semenov": {
+		"name": "Дмитрий Семёнов",
+		"email": "dimon.semen@ya.ru",
+		"telegram": "esdivi",
+		"loc": "Россия"
+	},
+	"andrey-senchukov": {
+		"name": "Андрей Сенчуков",
+		"email": "senchukovandrey@icloud.com",
+		"telegram": "Andrey_Senchukov",
+		"loc": "Москва"
+	},
+	"roman-lebedev": {
+		"name": "Роман Лебедев",
+		"email": "NevskieMorji@gmail.com",
+		"telegram": "NewSkyMorj",
+		"loc": "Россия"
+	},
+	"guest-future": {
+		"name": "Гость из будущего",
+		"email": "obrazbudushego@mail.ru",
+		"telegram": "obrazbudushego",
+		"loc": "Россия"
+	},
+	"fail-nurtdinov": {
+		"name": "Фаиль Нуртдинов",
+		"email": "nurtdinovf@yandex.ru",
+		"loc": "Москва"
+	},
+	"vasiliy-efimov": {
+		"name": "Василий Ефимов",
+		"email": "vas.efimov@gmail.com",
+		"telegram": "evvspb",
+		"loc": "Санкт-Петербург"
+	},
+	"evgeniy-shashihin": {
+		"name": "Евгений Шашихин",
+		"email": ""
+	},
+	"aleksei-kartashev": {
+		"name": "Алексей Карташев",
+		"email": "kartashevdisk@gmail.com",
+		"telegram": "kartashev81",
+		"loc": "Москва"
+	},
+	"arcadiy-rozbash": {
+		"name": "Аркадий Розбаш",
+		"email": "12345yyy@list.ru",
+		"telegram": "ArkadiyBrest",
+		"loc": "Брест"
+	},
+	"konstantin-devyatov": {
+		"name": "Константин Девятов",
+		"email": "kdevyatov@conceptuallibrary.com",
+		"telegram": "kdevyatov",
+		"loc": "Бали, Индонезия"
+	},
+	"vyacheslav-kravchuk": {
+		"name": "Вячеслав Кравчук",
+		"email": "kravchuk.vyacheslav@mail.ru",
+		"telegram": "PromuzgTlgrm",
+		"loc": "Москва"
+	},
+	"zhaloliddin-sirozhiddinov": {
+		"name": "Жалолиддин Сирожиддинов",
+		"email": "jaloliddin.s@gmail.com",
+		"telegram": "Jaloliddinsroj",
+		"loc": "Ташкент"
+	},
+	"valery-miroshnikov": {
+		"name": "Валерий Мирошников",
+		"email": "mir007@rambler.ru",
+		"telegram": "Miroch007",
+		"loc": "Казань"
+	},
+	"alexey-sidorov": {
+		"name": "Алексей Сидоров",
+		"email": "forjetx@gmail.com",
+		"telegram": "alex_tael",
+		"loc": "Москва"
+	},
+	"pavel-fuks": {
+		"name": "Павел Фукс",
+		"email": "pfu.kob@gmail.com",
+		"telegram": "cepmet",
+		"loc": "Германия"
+	},
+	"eduard-rahmatullin": {
+		"name": "Эдуард Рахматуллин",
+		"email": "tozenit@list.ru",
+		"telegram": "dotumail",
+		"loc": "Уфа"
+	},
+	"nikolay-smirnov": {
+		"name": "Николай Смирнов",
+		"email": "nvs_v@mail.ru",
+		"loc": "Санкт-Петербург"
+	},
+	"alexandr-glushan": {
+		"name": "Александр Глушан",
+		"email": "glushansasha@rambler.ru",
+		"telegram": "Alexglusha",
+		"loc": "Санкт-Петербург"
+	},
+	"alyona-doynykh": {
+		"name": "Алёна Дойных",
+		"email": "daa0104@yandex.ru",
+		"telegram": "eleni_ya"
+	},
+	"dmitriy-mahaev": {
+		"name": "Дмитрий Махаев",
+		"email": "Dager_man@mail.ru",
+		"telegram": "QuosElf",
+		"loc": "Санкт-Петербург"
+	},
+	"mihail-velichko": {
+		"name": "Михаил Величко",
+		"email": "nbvpvmv@yandex.ru",
+		"loc": "Россия"
+	},
+	"oleg-vasilev": {
+		"name": "Олег Васильев",
+		"email": "3edinstvo.knigodel@gmail.com",
+		"loc": "Украина"
+	},
+	"sergey-budkov": {
+		"name": "Сергей Будков",
+		"email": "tandem-noosfera@yandex.ru",
+		"loc": "Россия"
+	},
+	"sergei-ignatov": {
+		"name": "Сергей Игнатов",
+		"email": "sergign60@mail.ru",
+		"loc": "Россия"
+	},
+	"vladinir-sluckiy": {
+		"name": "Владимир Слуцкий",
+		"email": "89103472704@mail.ru"
+	},
+	"stepan-grebnev": {
+		"name": "Степан Гребнев",
+		"email": "st.gr@list.ru"
+	},
+	"oleg-pokrovskiy": {
+		"name": "Олег Покровский",
+		"email": "whiterainbow@yandex.ru",
+		"telegram": "Oleg_Pokrovsky"
+	},
+	"arman-bitashev": {
+		"name": "Арман Бикташев",
+		"email": "biktashevarman28@gmail.com",
+		"telegram": "Goal203"
+	},
+	"andrey-giznelybov": {
+		"name": "Андрей Жизнилюбов",
+		"telegram": "blagopoluchnyi"
+	},
+	"aleksandr-ignatiev": {
+		"name": "Александр Игнатьев",
+		"email": "ignatievov@gmail.com"
+	},
+	"aleks-bogos": {
+		"name": "Александр Богославский",
+		"email": "bog_alex_ur@ukr.net",
+		"telegram": "alex_bogos"
+	}
+}
