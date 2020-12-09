@@ -1,0 +1,10 @@
+{{ $val := .Title }}
+{{ $res := .Title }}
+
+{{ range $key, $s := $.Site.Data.speakers }}
+	{{ if eq $val $key }}
+		{{ $res = $s.name }}
+	{{ end }}
+{{ end }}
+
+{{ return $res }}
