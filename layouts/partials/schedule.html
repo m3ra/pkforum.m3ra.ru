@@ -10,9 +10,10 @@
     {{ range first 1 .Params.speakers }}
     {{ with ($.Site.GetPage (printf "/speakers/%s" .)) }}
     <div class="fl fr-m w-100 w-90-m w-20-l pv2 pv4-l tr-l">
-      {{ .Title }}
-      {{ with .Params.loc }}
-      ({{ . }})
+      {{ partial "speakers-to-name" . }}
+      {{ $loc := partial "speakers-to-loc" . }}
+      {{ with $loc }}
+      ({{ $loc }})
       {{ end }}
     </div>
     {{ end }}

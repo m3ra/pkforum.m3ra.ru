@@ -11,7 +11,7 @@
         {{ range .Params.speakers }}
           {{ $name := . }}
           {{ with ($.Site.GetPage (printf "/speakers/%s" $name)) }}
-            <a href="{{.Permalink}}" class="link dark-green underline-hover dim">{{.Title}}</a>
+            <a href="{{.Permalink}}" class="link dark-green underline-hover dim">{{ partial "speakers-to-name" . }}</a>
           {{ end }}
         {{ end }}
       </div>

@@ -10,7 +10,7 @@
 {{- if .IsHome }}
 {{ .Site.Title }}
 {{- else }}
-{{ .Title }} &middot; {{ .Site.Title }}
+{{ partial "speakers-to-name" . }} &middot; {{ .Site.Title }}
 {{- end }}
 </title>
 <body class="sans-serif fw3">
