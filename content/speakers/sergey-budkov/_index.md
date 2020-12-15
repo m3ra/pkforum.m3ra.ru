@@ -1,5 +1,5 @@
 ---
 title: "Сергей Будков"
-email: "tandem-noosfera@yandex.ru" 
+email: "Sergei-budkov@mail.ru" 
 loc: "Россия" 
 ---
