@@ -3,4 +3,7 @@ title: "Психодинамика. Пути изменения психодин
 date: "28 Jan 21 16:00 MSK"
 draft: false
 speakers: ["valentin-rusakov"] 
+videos:
+  доклад: gnvgOl3SWPc
+  обсуждение доклада: HmVrUcEmnhY
 ---
