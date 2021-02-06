@@ -3,4 +3,7 @@ title: "Слова и смыслы: «метрологически состоя�
 date: "05 Feb 21 15:00 MSK"
 draft: false
 speakers: ["valentin-rusakov"] 
+videos:
+  доклад: IWlwIu1_ml4
+  обсуждение доклада: VLlZMuDhL98
 --- 
