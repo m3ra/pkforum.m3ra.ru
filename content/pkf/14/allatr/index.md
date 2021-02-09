@@ -3,4 +3,7 @@ title: "Распространение деструктивной идеолог
 date: "08 Feb 21 11:00 MSK"
 draft: false
 speakers: ["alena-namlieva"] 
+videos:
+  доклад: LWHeQcc9a_g
+  обсуждение доклада: TwKTTm-Z3A8
 --- 
