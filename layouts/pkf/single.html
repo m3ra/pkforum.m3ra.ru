@@ -36,7 +36,7 @@
 </div>
 
 <div class="cf">
-  {{ with .NextInSection }}
+  {{ with .PrevInSection }}
   <div class="fl w-50 tl">
     <a href="{{ .Permalink }}" class="f3 f2-ns f-4-l no-underline dark-green bg-animate hover-bg-dark-green hover-white inline-flex items-center pa3 ba border-box ml4" title="{{ .Title }}">
       <svg class="w2" viewBox="0 0 32 32" style="fill:currentcolor">
@@ -46,7 +46,7 @@
     </a>
   </div>
   {{ end }}
-  {{ with .PrevInSection }}
+  {{ with .NextInSection }}
   <div class="fr w-50 tr">
     <a href="{{ .Permalink }}" class="f3 f2-ns f-4-l no-underline dark-green bg-animate hover-bg-dark-green hover-white inline-flex items-center pa3 ba border-box mr4" title="{{ .Title }}">
       <span class="pr2">Следующий доклад</span>
