@@ -6,11 +6,13 @@
   {{ range .Pages.ByDate }}
   <section class="cf w-100 mw8 center bb b--black-20 f6 f5-ns f4-l">
     <div class="fl w-100 w-10-m w-10-l pv2 pv4-l fw4 tracked">{{ .Date.Format "15:04"}}</div>
-    <div class="fl w-100 w-90-m w-70-l pv2 pv4-l">{{ .Title }}</div>
+    <div class="fl w-100 w-90-m w-70-l pv2 pv4-l">
+      <a class="link dim dark-green" href="{{.Permalink}}">{{ .Title }}</a>
+    </div>
     {{ range first 1 .Params.speakers }}
     {{ with ($.Site.GetPage (printf "/speakers/%s" .)) }}
     <div class="fl fr-m w-100 w-90-m w-20-l pv2 pv4-l tr-l">
-      {{ .Title }}
+      <a class="link dim dark-green" href="{{.Permalink}}">{{ .Title }}</a>
       {{ with .Params.loc }}
       ({{ . }})
       {{ end }}
