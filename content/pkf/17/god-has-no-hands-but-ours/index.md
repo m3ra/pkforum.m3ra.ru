@@ -3,4 +3,7 @@ title: "\"У Бога нет рук кроме наших!\" О необходи
 date: "11 May 21 11:00 MSK"
 draft: false
 speakers: ["evgeniy-belyakov"]
+videos:
+  доклад: 3TcdcLhvBow
+  обсуждение доклада: 8GDDG7Pw204
 ---
