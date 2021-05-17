@@ -3,4 +3,7 @@ title: "Моя цель - прожить 150 лет. Внедрение поле
 date: "14 May 21 12:30 MSK"
 draft: false
 speakers: ["evgeniy-grishin"]
+videos:
+  доклад: HbdK1lnXIaI
+  обсуждение доклада: rNzVh8oMWXw
 ---
