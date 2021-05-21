@@ -1,4 +1,5 @@
 ---
 title: "Антон Антошин"
-telegram: "Anton_maat"
+email: "Anton.maat@gmail.com"
+telegram: "Anton_truman"
 ---
