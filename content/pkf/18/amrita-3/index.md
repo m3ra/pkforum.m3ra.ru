@@ -3,4 +3,7 @@ title: "Путь исцеления души, духа и тела, с чего 
 date: "16 Jun 21 11:00 MSK"
 draft: false
 speakers: ["sergey-polupanov"]
+videos:
+  доклад: 26pR1yxWBR8
+  обсуждение доклада: C7r9S6Rbn3c
 ---
