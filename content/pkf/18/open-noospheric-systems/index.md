@@ -3,4 +3,7 @@ title: "Проектирование космоноосферных процес
 date: "28 Jun 21 12:15 MSK"
 draft: false
 speakers: ["aleksandr-merkulov"]
+videos:
+  доклад: FgF5b66PwmE
+  обсуждение доклада: WmYCXPzh-g4
 ---
