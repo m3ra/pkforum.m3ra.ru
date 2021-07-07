@@ -1,6 +1,6 @@
 ---
 title: "Создание лесосадов"
-date: "07 Jul 21 12:00 MSK"
+date: "07 Jul 21 11:00 MSK"
 draft: false
 speakers: ["oleg-peretyatko"]
 ---
