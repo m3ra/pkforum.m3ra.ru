@@ -3,4 +3,7 @@ title: "Необычные выводы об экостроительстве п
 date: "11 Jul 21 12:00 MSK"
 draft: false
 speakers: ["evgeniy-filonenko"]
+videos:
+  доклад: KMgyIBZoLmY
+  обсуждение доклада: FtccWdQfbVo
 ---
