@@ -3,4 +3,8 @@ title: "Природосообразные технологии в растен�
 date: "29 Jul 21 15:15 MSK"
 draft: false
 speakers: ["nataliya-negulyaeva", "galina-nazarova"]
+videos:
+  доклад (ч.1): nJkihVe2nkk
+  доклад (ч.2): p3SoWVYPFEo
+  обсуждение доклада: PHzyVmeopE4
 ---
