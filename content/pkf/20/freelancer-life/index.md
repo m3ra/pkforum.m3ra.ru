@@ -3,4 +3,7 @@ title: "Актуальность выбора работы фрилансеро�
 date: "09 Aug 21 19:00 MSK"
 draft: false
 speakers: ["grigoriy-bogdanov"]
+videos:
+  доклад: aBl8_eqEjxg
+  обсуждение доклада: B-ELhUT_Gtc
 ---
