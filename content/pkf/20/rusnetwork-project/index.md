@@ -1,6 +1,6 @@
 ---
 title: "О проекте «Русеть»"
-date: "24 Aug 21 19:00 MSK"
+date: "30 Aug 21 19:00 MSK"
 draft: false
 speakers: ["aleksandr-merkulov"]
 ---
