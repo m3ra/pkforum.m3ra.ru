@@ -1,5 +1,5 @@
 ---
 title: "Первые зазнобинские чтения. Последние подробности мероприятия"
-date: "31 Aug 21 19:00 MSK"
+date: "1 Sep 21 14:00 MSK"
 speakers: ["vladimir-pirojcov"]
 ---
