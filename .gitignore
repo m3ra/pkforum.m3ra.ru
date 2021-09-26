@@ -67,3 +67,6 @@ node_modules/
 # Hugo public directory
 public/
 /hugo.exe
+
+# macOS
+.DS_Store
