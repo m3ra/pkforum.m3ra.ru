@@ -3,4 +3,7 @@ title: "Логика развития человечества в Простра
 date: "28 Sep 21 20:00 MSK"
 draft: false
 speakers: ["denis-timofeev"]
+videos:
+  доклад: WOiK6amIvks
+  обсуждение доклада: TJGs9kkSBKo
 ---
