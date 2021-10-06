@@ -49,7 +49,7 @@ steps:
 # Build the website with Hugo
 - name: 'gcr.io/$PROJECT_ID/hugo'
   args:
-    - --source site 
+    - --source=site
 
 # Deploy to Firebase Hosting
 - name: 'gcr.io/$PROJECT_ID/firebase'
