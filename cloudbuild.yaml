@@ -1,16 +1,47 @@
 steps:
-  # Build site with Hugo
-  - name: 'gcr.io/$PROJECT_ID/hugo'
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      # File that contains failures.
+      failure_file=failure.log
+      touch ${failure_file}
 
-  # Install functions' dependencies
-  - name: 'gcr.io/cloud-builders/npm'
-    args: ['--prefix', 'functions', 'install', 'functions']
-    waitFor: ['-']
+      # Loop through the modules, and build independently.
+      for d in */; do
+        readme="${d}README.md"
+        if [[ ! -f "${readme}" ]]; then
+          # Note the error but try to build anyway.
+          echo "${d}: ${readme} not found." | tee -a ${failure_file}
+        fi
 
-  # Build the Firebase image
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/firebase', '.' ]
+        config="${d}cloudbuild.yaml"
+        if [[ ! -f "${config}" ]]; then
+          echo "${d} failed: ${config} not found." | tee -a ${failure_file}
+          continue
+        fi
 
-  # Deploy to Firebase
-  - name: 'gcr.io/$PROJECT_ID/firebase'
-    args: ['deploy', '--project', '$PROJECT_ID']
+        echo "Building $d ... "
+        (
+          logfile="${d::-1}.log" # Logfile for "foo/" builder is "foo.log".
+          gcloud builds submit $d --config=${config} > ${logfile} 2>&1
+          if [[ $? -ne 0 ]]; then
+            echo "${d} failed." | tee -a ${failure_file}
+            cat ${logfile}
+          fi
+        ) &
+      done
+
+      wait
+
+      # Check if there is any failure.
+      if [[ -s ${failure_file} ]]; then
+        echo
+        echo "Some builds failed:"
+        cat ${failure_file}
+        echo "Exiting."
+        exit 1
+      fi
+
+      echo "All builds succeeded."
