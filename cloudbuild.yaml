@@ -55,6 +55,6 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/firebase'
   args:
     - deploy
-    - --project $PROJECT_ID
-    - --only hosting
-    - --public site/public 
+    - --project=$PROJECT_ID
+    - --only=hosting
+    - --public=site/public
