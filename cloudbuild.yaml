@@ -9,7 +9,7 @@ steps:
       touch ${failure_file}
 
       # Loop through the modules, and build independently.
-      for d in */; do
+      for d in builders/*/; do
         readme="${d}README.md"
         if [[ ! -f "${readme}" ]]; then
           # Note the error but try to build anyway.
@@ -45,3 +45,16 @@ steps:
       fi
 
       echo "All builds succeeded."
+
+# Build the website with Hugo
+- name: 'gcr.io/$PROJECT_ID/hugo'
+  args:
+    - --source site 
+
+# Deploy to Firebase Hosting
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args:
+    - deploy
+    - --project $PROJECT_ID
+    - --only hosting
+    - --public site/public 
