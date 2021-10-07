@@ -1,0 +1,50 @@
+#!/bin/bash
+
+shopt -s globstar
+
+ROOT_DIR=$(git rev-parse --show-toplevel)
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+LOG_FILE=$SCRIPT_DIR/$(basename "$0").log
+
+is_compressed()
+{
+  # Strip ROOT_DIR prefix
+  local f=${1#$ROOT_DIR/}
+  grep \
+    --fixed-strings \
+    --line-regexp \
+    --silent \
+    --no-messages \
+    "$f" "$LOG_FILE"
+}
+
+compress()
+{
+  # Strip ROOT_DIR prefix
+  local f=${1#$ROOT_DIR/}
+  echo "Compressing $f ..." >&2
+
+  tmp_file=$(mktemp)
+
+  gs \
+    -sDEVICE=pdfwrite \
+    -dCompatibilityLevel=1.4 \
+    -dPDFSETTINGS=/screen \
+    -dNOPAUSE \
+    -dQUIET \
+    -dBATCH \
+    -sOutputFile="$tmp_file" "$1" \
+  && mv "$tmp_file" "$1" \
+  && echo "$f" >> "$LOG_FILE"
+}
+
+main()
+{
+  local f
+  for f in "$ROOT_DIR"/**/*.pdf; do
+    is_compressed "$f" && continue 
+    compress "$f"
+  done
+}
+
+main
