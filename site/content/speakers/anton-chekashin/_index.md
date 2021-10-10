@@ -1,4 +1,4 @@
 ---
-title: "Антон Чекашин"
+title: "Антон Чекасин"
 email: "chekasinaa@yandex.ru"
 ---
