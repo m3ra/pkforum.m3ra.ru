@@ -3,4 +3,7 @@ title: "Проекты по организации детского досуга
 date: "15 Oct 21 19:00 MSK"
 draft: false
 speakers: ["iliya-stebenyuk"]
+videos:
+  доклад: DrtLagxzkWY
+  обсуждение доклада: CjMh8b5_yp0
 ---
