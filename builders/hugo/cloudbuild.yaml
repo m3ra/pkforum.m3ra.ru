@@ -1,6 +1,6 @@
 steps:
 # Use Kaniko cache to build Docker container image for Hugo
-- name: 'gcr.io/kaniko-project/executor:latest'
+- name: 'gcr.io/kaniko-project/executor:v1.6.0'
   args:
   - --destination=gcr.io/$PROJECT_ID/hugo
   - --cache=true
