@@ -3,4 +3,7 @@ title: "Семейные школы «Пространство» и skillcamp «
 date: "28 Oct 21 18:00 MSK"
 draft: false
 speakers: ["kirill-lebedev"]
+videos:
+  доклад: y5mIgZ9rLtA
+  обсуждение доклада: q6KAvdTQLlU
 ---
