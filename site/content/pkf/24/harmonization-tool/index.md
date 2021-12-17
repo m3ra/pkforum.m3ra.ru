@@ -3,6 +3,9 @@ title: "СМК Кладо - Инструмент для гармонизации
 date: "12 Dec 21 10:30 MSK"
 draft: false
 speakers: ["vyacheslav-hankov"]
+videos:
+  доклад: DCa1PnsF6hs
+  обсуждение доклада: BoJY6ph8vrc
 ---
 
 ### 12 декабря 2021 года состоится выступление на тему:
