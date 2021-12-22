@@ -9,16 +9,16 @@
     <div class="fl w-100 w-90-m w-70-l pv2 pv4-l">
       <a class="link dim dark-green" href="{{.Permalink}}">{{ .Title }}</a>
     </div>
-    {{ range first 1 .Params.speakers }}
-    {{ with ($.Site.GetPage (printf "/speakers/%s" .)) }}
     <div class="fl fr-m w-100 w-90-m w-20-l pv2 pv4-l tr-l">
+    {{ range .Params.speakers }}
+    {{ with ($.Site.GetPage (printf "/speakers/%s" .)) }}
       <a class="link dim dark-green" href="{{.Permalink}}">{{ .Title }}</a>
       {{ with .Params.loc }}
       ({{ . }})
       {{ end }}
+    {{ end }}
+    {{ end }}
     </div>
-    {{ end }}
-    {{ end }}
   </section>
   {{ end }}
   {{ end }}
