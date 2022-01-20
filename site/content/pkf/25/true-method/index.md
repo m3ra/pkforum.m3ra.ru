@@ -3,4 +3,7 @@ title: "Об избавлении от психологической завис
 date: "19 Jan 22 16:00 MSK"
 draft: false
 speakers: ["andrey-senchukov"]
+videos:
+  доклад: R_jdL2iJGPo
+  обсуждение доклада: ZmKcpzwR6CU
 ---
