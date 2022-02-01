@@ -3,4 +3,7 @@ title: "Не зная прошлого не видишь будущего. Эв�
 date: "23 Jan 22 11:00 MSK"
 draft: false
 speakers: ["evgeniy-belyakov"]
+videos:
+  доклад: qHnwZzlo174
+  обсуждение доклада: tmXEZqZ5Kl8
 ---
