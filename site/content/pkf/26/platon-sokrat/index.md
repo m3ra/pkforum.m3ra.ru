@@ -3,4 +3,7 @@ title: "Духовность в понимании Платона и Сокра�
 date: "07 Feb 22 15:00 MSK"
 draft: false
 speakers: ["vitaliy-shcherba"]
+videos:
+  доклад: it3PSHbcTEg
+  обсуждение доклада: vhefA8hieDI
 ---
