@@ -3,4 +3,7 @@ title: "Практика применения КОБ в различных пр�
 date: "18 Feb 22 20:00 MSK"
 draft: false
 speakers: ["andrey-stalinov"]
+videos:
+  доклад: BgHyPjQtyhw
+  обсуждение доклада: nQN38sE-dAg
 ---
