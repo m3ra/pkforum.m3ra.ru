@@ -1,6 +1,6 @@
 ---
 title: "Алексей Сучков"
 email: "larskael@yandex.ru"
-telegram: "Lars_psy"
+telegram: "kisonkosami"
 loc: "Россия"
 ---
