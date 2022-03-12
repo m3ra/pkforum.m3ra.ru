@@ -4,4 +4,6 @@ date: "11 Mar 22 19:00 MSK"
 draft: false
 speakers: ["guest-future"]
 videos:
+  доклад: wDl-j1RZhbA
+  обсуждение доклада: 67OwnWAIbKM
 ---
