@@ -3,4 +3,6 @@ title: "Круглый стол. О дальнейших вариантах ра
 date: "18 Mar 22 18:00 MSK"
 draft: false
 videos:
+  доклад: FpU4X4zAF2o
+  обсуждение доклада: WNdlTc27B5A
 ---
