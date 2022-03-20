@@ -1,0 +1,35 @@
+name: Build and deploy
+on:
+  push:
+    branches:
+      - trunk
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Hugo
+        env:
+          HUGO_URL: https://github.com/gohugoio/hugo/releases/download/
+          HUGO_OS_ARCH: Linux-64bit
+          HUGO_VERSION: 0.95.0
+        run: |
+          wget -O- \
+            ${HUGO_URL}v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz | \
+          tar -C /usr/local/bin -xz
+      - name: Build website
+        run: hugo
+      - name: Deploy to Yandex Cloud Object Storage
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ru-central-1
+          YC_ENDPOINT_URL: https://storage.yandexcloud.net
+          YC_STORAGE_BUCKET: ${{ secrets.YC_STORAGE_BUCKET }}
+        run: |
+          aws s3 --endpoint-url=${YC_ENDPOINT_URL} \
+            sync public/ \
+            s3://${YC_STORAGE_BUCKET}/
