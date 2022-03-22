@@ -40,4 +40,5 @@ jobs:
       - name: Purge CDN cache
         run: |
           yc cdn cache purge --all --async \
-             --resource-id $(yc cdn resource list --format json | jq -r .[0].id)
+             --resource-id $(yc cdn resource list --format json | jq -r .[0].id) \
+             --folder-id $(yc cdn resource list --format json | jq -r .[0].folder_id)
