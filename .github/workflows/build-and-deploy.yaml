@@ -39,4 +39,5 @@ jobs:
             s3://${YC_STORAGE_BUCKET}/
       - name: Purge CDN cache
         run: |
-          yc cdn cache purge --all --async
+          yc cdn cache purge --all --async \
+             --resource-id $(yc cdn resource list --format json | jq -r .[0].id)
