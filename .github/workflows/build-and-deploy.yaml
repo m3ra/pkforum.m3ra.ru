@@ -11,6 +11,10 @@ jobs:
         working-directory: site
     steps:
       - uses: actions/checkout@v2
+      - name: Install Yandex Cloud CLI
+        uses: okar1/yc-cli-install@1.0
+        with:
+          SA_KEY: ${{ secrets.YC_SERVICE_ACCOUNT_KEY }}
       - name: Install Hugo
         env:
           HUGO_URL: https://github.com/gohugoio/hugo/releases/download/
@@ -33,3 +37,6 @@ jobs:
           aws s3 --endpoint-url=${YC_ENDPOINT_URL} \
             sync public/ \
             s3://${YC_STORAGE_BUCKET}/
+      - name: Purge CDN cache
+        run: |
+          yc cdn cache purge --all --async
