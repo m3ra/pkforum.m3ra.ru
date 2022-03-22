@@ -38,7 +38,10 @@ jobs:
             sync public/ \
             s3://${YC_STORAGE_BUCKET}/
       - name: Purge CDN cache
+        env:
+          YC_FOLDER_ID: ${{ secrets.YC_FOLDER_ID }}
+          YC_CDN_RESOURCE_ID: ${{ secrets.YC_CDN_RESOURCE_ID }}
         run: |
           yc cdn cache purge --all --async \
-             --resource-id $(yc cdn resource list --format json | jq -r .[0].id) \
-             --folder-id $(yc cdn resource list --format json | jq -r .[0].folder_id)
+             --folder-id $YC_FOLDER_ID \
+             --resource-id $YC_CDN_RESOURCE_ID
