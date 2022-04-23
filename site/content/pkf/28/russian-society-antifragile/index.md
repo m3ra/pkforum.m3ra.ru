@@ -3,4 +3,7 @@ title: "«Антихрупкость» русского общества и ве
 date: "14 Apr 22 14:00 MSK"
 draft: false
 speakers: ["aleksej-marchenko"]
+videos:
+  доклад: QIqHzk76zYY
+  обсуждение доклада: sRE3Ts3U2xA
 ---
