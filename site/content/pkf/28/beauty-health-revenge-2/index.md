@@ -3,4 +3,7 @@ title: "Красота, здоровье. Месть. Или почему и к�
 date: "24 Apr 22 12:00 MSK"
 draft: false
 speakers: ["natalya-sadykova"]
+videos:
+  доклад: 7egmgq4L-lg
+  обсуждение доклада: w9BJcxMtivU
 ---
