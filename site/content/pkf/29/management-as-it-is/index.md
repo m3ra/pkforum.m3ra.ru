@@ -1,6 +1,6 @@
 ---
 title: "Управление как оно есть"
-date: "05 May 22 17:00 MSK"
+date: "12 May 22 17:00 MSK"
 draft: false
 speakers: ["sergey-budkov"]
 ---
