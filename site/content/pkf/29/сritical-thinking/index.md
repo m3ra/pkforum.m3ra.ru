@@ -3,4 +3,7 @@ title: "Критическое мышление. Как сформировать
 date: "15 May 22 16:00 MSK"
 draft: false
 speakers: ["dmitriy-raevski"]
+videos:
+  доклад: kymBGUw2PvY
+  обсуждение доклада: lk-at3__ZUM
 ---
