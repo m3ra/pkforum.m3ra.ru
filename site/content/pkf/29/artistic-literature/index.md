@@ -3,4 +3,7 @@ title: "Художественная литература, как низкоча
 date: "21 May 22 14:00 MSK"
 draft: false
 speakers: ["sergey-kostyuk"]
+videos:
+  доклад: 9aRJ8DnKLzU
+  обсуждение доклада: 9rfhln9gDx0
 ---
