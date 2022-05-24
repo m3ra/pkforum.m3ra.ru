@@ -3,4 +3,7 @@ title: "Маркеры глобального управления в совре
 date: "22 May 22 11:00 MSK"
 draft: false
 speakers: ["vladimir-barishnikov"]
+videos:
+  доклад: kuiGm6fvXj8
+  обсуждение доклада: qzu1PDNZLQ4
 ---

@@ -3,4 +3,7 @@ title: "Взгляд художника на современную культу
 date: "18 May 22 15:00 MSK"
 draft: false
 speakers: ["nikolay-larin"]
+videos:
+  доклад: OuzQghqVYI
+  обсуждение доклада: RZH0BLwrCMg
 ---

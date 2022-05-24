@@ -3,4 +3,7 @@ title: "Максимальная прибыль как приманка, или 
 date: "19 May 22 17:00 MSK"
 draft: false
 speakers: ["andrey-senchukov"]
+videos:
+  доклад: KJ1b2Z0D8Yk
+  обсуждение доклада: _0U8vrPriPE
 ---
