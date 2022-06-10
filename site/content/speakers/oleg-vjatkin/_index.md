@@ -1,5 +1,5 @@
 ---
 title: "Олег Вяткин"
-email: "info@asystema.сom"
+email: "info@asystema.com"
 telegram: "@OlegIvanovichVyatkin"
 ---
