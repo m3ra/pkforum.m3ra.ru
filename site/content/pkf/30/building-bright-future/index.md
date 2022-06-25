@@ -3,4 +3,7 @@ title: "Практика и инструменты построения Свет
 date: "25 Jun 22 13:00 MSK"
 draft: false
 speakers: ["aleksei-c"]
+videos:
+  доклад: XfIkFfCK67w
+  обсуждение доклада: IyrFVRyvVU0
 ---
