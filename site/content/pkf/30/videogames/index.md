@@ -3,4 +3,7 @@ title: "Видеоигры и культура пасхалок как сред�
 date: "26 Jun 22 11:00 MSK"
 draft: false
 speakers: ["arseniy-izyurov"]
+videos:
+  доклад: VBPCwfFD5Wc
+  обсуждение доклада: vydgWDRHdc8
 ---
