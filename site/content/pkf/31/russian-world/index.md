@@ -3,4 +3,7 @@ title: "Управленческие основы формирования ру�
 date: "29 Aug 22 15:00 MSK"
 draft: false
 speakers: ["andrey-ivanov"]
+videos:
+  доклад: vjbxCyfQQwY
+  обсуждение доклада: csfgpOKyk3A
 ---
