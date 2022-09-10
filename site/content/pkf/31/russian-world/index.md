@@ -1,6 +1,9 @@
 ---
-title: "О русском мире"
-date: "25 Aug 22 12:00 MSK"
+title: "Управленческие основы формирования русского мира"
+date: "29 Aug 22 15:00 MSK"
 draft: false
 speakers: ["andrey-ivanov"]
+videos:
+  доклад: vjbxCyfQQwY
+  обсуждение доклада: csfgpOKyk3A
 ---
