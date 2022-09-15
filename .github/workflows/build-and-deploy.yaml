@@ -23,10 +23,12 @@ jobs:
       - name: Build website
         run: hugo
       - name: Deploy files
-        uses: appleboy/scp-action@v0.1.3
+        uses: burnett01/rsync-deployments@5.2.1
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          source: "public/*"
-          target: "htdocs"
+          switches: -avzr --delete
+          path: public/
+          remote_path: htdocs
+          remote_host: ${{ secrets.HOST }}
+          remote_user: ${{ secrets.USERNAME }}
+          remote_key: ${{ secrets.KEY }}
+
