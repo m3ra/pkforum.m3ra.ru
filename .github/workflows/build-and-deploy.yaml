@@ -22,13 +22,9 @@ jobs:
           tar -C /usr/local/bin -xz
       - name: Build website
         run: hugo
+      - name: Setup SSH key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.KEY }}" > ~/.ssh/id_rsa
       - name: Deploy files
-        uses: burnett01/rsync-deployments@5.2.1
-        with:
-          switches: -avzr --delete
-          path: src/public/
-          remote_path: htdocs
-          remote_host: ${{ secrets.HOST }}
-          remote_user: ${{ secrets.USERNAME }}
-          remote_key: ${{ secrets.KEY }}
-
+        run: rsync --archive --delete --stats -e 'ssh -o StrictHostKeyChecking=no' public/ ${{ secrets.REMOTE_DEST }}
