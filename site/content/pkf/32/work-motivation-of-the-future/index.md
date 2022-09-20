@@ -1,6 +1,6 @@
 ---
 title: "Мотивация на добросовестный труд в экономике будущего"
-date: "22 Sep 22 18:00 MSK"
+date: "22 Sep 22 16:30 MSK"
 draft: false
 speakers: ["guest-future"]
 ---
