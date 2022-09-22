@@ -11,37 +11,20 @@ jobs:
         working-directory: site
     steps:
       - uses: actions/checkout@v2
-      - name: Install Yandex Cloud CLI
-        uses: okar1/yc-cli-install@1.0
-        with:
-          SA_KEY: ${{ secrets.YC_SERVICE_ACCOUNT_KEY }}
       - name: Install Hugo
         env:
           HUGO_URL: https://github.com/gohugoio/hugo/releases/download/
           HUGO_OS_ARCH: Linux-64bit
-          HUGO_VERSION: 0.95.0
+          HUGO_VERSION: 0.103.0
         run: |
           wget -O- \
             ${HUGO_URL}v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_OS_ARCH}.tar.gz | \
           tar -C /usr/local/bin -xz
       - name: Build website
         run: hugo
-      - name: Deploy to Yandex Cloud Object Storage
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ru-central-1
-          YC_ENDPOINT_URL: https://storage.yandexcloud.net
-          YC_STORAGE_BUCKET: ${{ secrets.YC_STORAGE_BUCKET }}
+      - name: Setup SSH key
         run: |
-          aws s3 --endpoint-url=${YC_ENDPOINT_URL} \
-            sync public/ \
-            s3://${YC_STORAGE_BUCKET}/
-      - name: Purge CDN cache
-        env:
-          YC_FOLDER_ID: ${{ secrets.YC_FOLDER_ID }}
-          YC_CDN_RESOURCE_ID: ${{ secrets.YC_CDN_RESOURCE_ID }}
-        run: |
-          yc cdn cache purge --all --async \
-             --folder-id $YC_FOLDER_ID \
-             --resource-id $YC_CDN_RESOURCE_ID
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.KEY }}" > ~/.ssh/id_rsa
+      - name: Deploy files
+        run: rsync --rsync-path=/usr/bin/openrsync --archive --delete -e 'ssh -o StrictHostKeyChecking=no' public/ ${{ secrets.REMOTE_DEST }}
