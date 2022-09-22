@@ -27,4 +27,4 @@ jobs:
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.KEY }}" > ~/.ssh/id_rsa
       - name: Deploy files
-        run: rsync --rsync-path=/usr/bin/openrsync --archive --delete --stats -e 'ssh -o StrictHostKeyChecking=no' public/ ${{ secrets.REMOTE_DEST }}
+        run: rsync --rsync-path=/usr/bin/openrsync --archive --delete -e 'ssh -o StrictHostKeyChecking=no' public/ ${{ secrets.REMOTE_DEST }}
