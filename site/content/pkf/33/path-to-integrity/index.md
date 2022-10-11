@@ -3,4 +3,7 @@ title: "Опять о пути к Целостности, или - с точки
 date: "11 Oct 22 12:00 MSK"
 draft: false
 speakers: ["evgeniy-belyakov"]
+videos:
+  доклад: Ij9IZMdB9wE
+  обсуждение доклада: ngI497Tgfls
 ---
