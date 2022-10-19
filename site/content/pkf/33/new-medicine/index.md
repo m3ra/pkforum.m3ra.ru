@@ -3,4 +3,7 @@ title: "ГНМ. Новая медицина. Ствол мозга и мозже
 date: "18 Oct 22 10:00 MSK"
 draft: false
 speakers: ["artem-sverkunov"]
+videos:
+  доклад: Xx7EayzmrmE
+  обсуждение доклада: 2OYol8qU3v8
 ---
