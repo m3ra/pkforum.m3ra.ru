@@ -1,5 +1,6 @@
 ---
 title: "Евгений Щёголев"
-email: ""
+email: "arifmetic@yandex.ru"
 telegram: ""
+loc: "Санкт-Петербург"
 ---
