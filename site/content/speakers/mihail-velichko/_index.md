@@ -1,5 +1,5 @@
 ---
 title: "Михаил Величко"
 email: "nbvpvmv@yandex.ru" 
-loc: "Россия" 
+loc: "Санкт-Петербург" 
 ---
