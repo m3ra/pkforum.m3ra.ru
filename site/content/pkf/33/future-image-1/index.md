@@ -4,3 +4,4 @@ date: "05 Nov 22 14:00 MSK"
 draft: false
 speakers: ["vachslav-voznesenskiy", "guest-future", "valery-miroshnikov", "oleg-pokrovskiy", "eduard-rahmatullin", "aleksei-c"]
 ---
+Участники: Вячеслав Вознесенский, Гость из будущего, Валерий Мирошников, Олег Покровский, Эдуард Рахматуллин, Алексей Сучков
