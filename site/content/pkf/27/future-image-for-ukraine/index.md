@@ -2,6 +2,7 @@
 title: "Круглый стол. О дальнейших вариантах развития событий. Какой образ будущего и идеологию могла бы предложить Россия Украине и что предложит на самом деле"
 date: "18 Mar 22 18:00 MSK"
 draft: false
+speakers: ["evgeniy-shchyogolev", "sergey-lisovskiy", "anton-evstropov", "igor-solonko", "guest-future", "valentin-rusakov"]
 videos:
   доклад: FpU4X4zAF2o
   обсуждение доклада: WNdlTc27B5A
