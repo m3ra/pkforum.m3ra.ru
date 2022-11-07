@@ -1,14 +1,7 @@
 {{- define "main" -}}
 
-
 <article class="cf ph4 pv4 w-100 mw8 center bg-white">
-  {{ range $h, $id := .Params.videos }}
-  <h3 class="f3 f2-ns f-4-l fw3 tc dark-green pt4 pt6-l">{{ $h | humanize }}</h3>
-  <div class="aspect-ratio aspect-ratio--8x5">
-    <iframe class="aspect-ratio--object" type="text/html" src="https://www.youtube.com/embed/{{ $id }}" allowfullscreen frameborder="0">
-    </iframe>
-  </div>
-  {{ end }}
+  {{ partial "videos" . }}
   {{ .Content }}
 </article>
 
