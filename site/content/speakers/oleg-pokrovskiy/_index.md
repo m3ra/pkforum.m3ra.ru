@@ -1,5 +1,6 @@
 ---
 title: "Олег Покровский"
 email: "whiterainbow@yandex.ru"
-telegram: "Oleg_Pokrovsky" 
+telegram: "Oleg_Pokrovsky"
+loc: "Санкт-Петербург"
 ---

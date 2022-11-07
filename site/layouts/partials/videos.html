@@ -1,0 +1,19 @@
+{{ if reflect.IsSlice .Params.videos }}
+  {{ range .Params.videos }}
+    {{ range $h, $id := . }}
+    <h3 class="f3 f2-ns f-4-l fw3 tc dark-green pt4 pt6-l">{{ $h | humanize | title }}</h3>
+    <div class="aspect-ratio aspect-ratio--8x5">
+      <iframe class="aspect-ratio--object" type="text/html" src="https://www.youtube.com/embed/{{ $id }}" allowfullscreen frameborder="0">
+      </iframe>
+    </div>
+    {{ end }}
+  {{ end }}
+{{ else if reflect.IsMap .Params.videos }}
+  {{ range $h, $id := .Params.videos }}
+  <h3 class="f3 f2-ns f-4-l fw3 tc dark-green pt4 pt6-l">{{ $h | humanize | title }}</h3>
+  <div class="aspect-ratio aspect-ratio--8x5">
+    <iframe class="aspect-ratio--object" type="text/html" src="https://www.youtube.com/embed/{{ $id }}" allowfullscreen frameborder="0">
+    </iframe>
+  </div>
+  {{ end }}
+{{ end }}

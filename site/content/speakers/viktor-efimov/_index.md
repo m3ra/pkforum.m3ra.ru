@@ -1,5 +1,6 @@
 ---
 title: "Виктор Ефимов"
-email: ""
-telegram: ""
+email: "efimov.vik@gmail.com"
+telegram: "viktorefimoff"
+loc: "Санкт-Петербург"
 ---
