@@ -16,7 +16,8 @@
       {{ end }}
     </div>
     <div class="pr3">
-      {{ with .Resources.GetMatch "*.pdf" }}
+      {{ $slides := printf "%s.pdf" (path.Base .File.Dir) }}
+      {{ with .Resources.GetMatch $slides }}
       <a class="dib link underline dark-green dim" href="{{.Permalink}}">Скачать слайды</a>
       <a class="dib ml4 link underline dark-green dim" href="https://docs.google.com/viewer?{{ (querify "url" .Permalink ) | safeURL }}">Смотреть онлайн</a>
       {{ end }}
