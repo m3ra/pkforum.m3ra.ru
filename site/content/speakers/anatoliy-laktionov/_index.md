@@ -1,5 +1,5 @@
 ---
 title: "Анатолий Лактионов"
-email: ""
+email: "an.laktionov@gmail.com"
 telegram: ""
 ---
