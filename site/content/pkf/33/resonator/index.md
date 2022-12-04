@@ -2,7 +2,7 @@
 title: 'НИР «8 мир». Народный ионосферный резерв или резонатор'
 date: "25 Oct 22 19:00 MSK"
 draft: false
-speakers: ["pavel-zaratonov"]
+speakers: ["pavel-zaratonov", "nadezhda-eos"]
 videos:
   доклад: ykaoEJFBLAI
   обсуждение доклада: pWmPthQz0-8
