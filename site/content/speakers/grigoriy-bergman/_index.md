@@ -1,5 +1,5 @@
 ---
-title: "Григорий Брегман"
+title: "Георгий Брегман"
 email: ""
 telegram: "litpalata"
 ---
