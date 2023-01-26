@@ -3,4 +3,7 @@ title: "Современная поп-песня, методика анализ�
 date: "25 Jan 23 20:00 MSK"
 draft: false
 speakers: ["vladimir-barishnikov"]
+videos:
+  доклад: vKnmQjds_T8
+  обсуждение доклада: OL-KfcyKHYY
 ---
