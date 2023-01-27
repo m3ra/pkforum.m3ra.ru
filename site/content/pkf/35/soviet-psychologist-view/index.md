@@ -3,4 +3,7 @@ title: "Взгляд советского практического психо�
 date: "27 Jan 23 13:00 MSK"
 draft: false
 speakers: ["elena-konik"]
+videos:
+  доклад: aKcJnRfclTE
+  обсуждение доклада: qZErG6c6qqo
 ---
