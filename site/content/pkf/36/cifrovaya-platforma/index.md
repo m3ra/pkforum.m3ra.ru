@@ -3,4 +3,7 @@ title: "Народная цифровая платформа как инстру
 date: "20 Feb 23 18:00 MSK"
 draft: false
 speakers: ["sergey-tyulyandin"]
+videos:
+  доклад: wDhqcMaXojE
+  обсуждение доклада: VLJjwpSWzfU
 ---
