@@ -3,4 +3,7 @@ title: "Социальные связи как мера процесса еди�
 date: "26 Feb 23 14:00 MSK"
 draft: false
 speakers: ["denis-razumovskiy"]
+videos:
+  доклад: HdcaUB1gWHM
+  обсуждение доклада: b4sCXKfVKn4
 ---
