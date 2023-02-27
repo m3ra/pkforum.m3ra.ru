@@ -1,5 +1,6 @@
 ---
-title: "Денис Разумовский"
+title: "Денис Петров"
+loc: "Иваново"
 email: ""
 telegram: "den_razumovskiy"
 ---
