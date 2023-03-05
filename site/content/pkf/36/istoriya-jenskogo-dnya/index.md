@@ -3,4 +3,7 @@ title: "История создания «Международного женс�
 date: "05 Mar 23 14:00 MSK"
 draft: false
 speakers: ["konstantin-nechaev"]
+videos:
+  доклад: W2n-ZVW4k9Y
+  обсуждение доклада: D_JCTByH9LY
 ---
