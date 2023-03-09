@@ -3,4 +3,7 @@ title: "О просветительстве с помощью вокальной
 date: "09 Mar 23 16:30 MSK"
 draft: false
 speakers: ["evgeniy-shteynmiller"]
+videos:
+  доклад: ZRCNceuZJwo
+  обсуждение доклада: p3bDYUyMc1w
 ---
