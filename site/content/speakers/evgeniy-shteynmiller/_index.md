@@ -1,5 +1,6 @@
 ---
 title: "Евгений Штейнмиллер"
-email: ""
+loc: "Томск"
+email: "shteinmiller@yandex.ru"
 telegram: "baritonevgeniy"
 ---
