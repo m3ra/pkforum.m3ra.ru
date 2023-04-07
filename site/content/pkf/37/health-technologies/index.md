@@ -3,4 +3,7 @@ title: "Кто ты, человек? О внедрении здоровьесб�
 date: "07 Apr 23 18:45 MSK"
 draft: false
 speakers: ["aleksey-severikov"]
+videos:
+  доклад: BbuGlvG0nog
+  обсуждение доклада: 7gWvt523Kwg
 ---
