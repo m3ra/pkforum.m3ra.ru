@@ -3,4 +3,7 @@ title: "И снова о видовой грации и целостном дв�
 date: "11 May 23 14:00 MSK"
 draft: false
 speakers: ["evgeniy-belyakov"]
+videos:
+  доклад: 7AGtgp_JFVo
+  обсуждение доклада: fVvEmkH2jOQ
 ---
