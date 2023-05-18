@@ -3,4 +3,7 @@ title: "Питание, как инструмент управления чел�
 date: "17 May 23 11:30 MSK"
 draft: false
 speakers: ["anatoliy-gushchin"]
+videos:
+  доклад: 2C0weJ5ygEg
+  обсуждение доклада: JOt-i11joow
 ---
