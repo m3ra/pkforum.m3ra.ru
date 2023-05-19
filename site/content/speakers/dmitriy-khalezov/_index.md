@@ -1,5 +1,5 @@
 ---
 title: "Дмитрий Халезов"
-email: ""
+email: "dkh911bkk@protonmail.com"
 telegram: "DimitriKhalezov"
 ---
