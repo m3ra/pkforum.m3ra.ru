@@ -3,4 +3,7 @@ title: "Биосферные экопоселения как способ раз
 date: "16 Aug 23 12:00 MSK"
 draft: false
 speakers: ["aleksandr-chudilin"]
+videos:
+  доклад: 7ZwMeD0CjEw
+  обсуждение доклада: -bEWWKSVzng
 ---
