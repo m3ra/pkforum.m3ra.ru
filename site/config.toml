@@ -16,3 +16,11 @@ buildFuture = true
     name = "Докладчики"
     url = "/speakers/"
     weight = 2
+  [[menu.main]]
+    name = "О проекте"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Поддержка проекта"
+    url = "/donates/"
+    weight = 4
