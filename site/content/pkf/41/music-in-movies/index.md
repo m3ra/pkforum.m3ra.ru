@@ -1,5 +1,6 @@
 ---
-title: "19 - 30 ноября 2023 года"
+title: "Как работает музыка в кино и сериалах"
+date: "30 Nov 23 19:00 MSK"
 draft: false
-date: "2023-11-19"
+speakers: ["vladimir-barishnikov"]
 ---
