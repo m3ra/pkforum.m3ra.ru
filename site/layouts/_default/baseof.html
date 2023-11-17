@@ -13,7 +13,8 @@
 <meta property="og:image:width" content="320">
 <meta property="og:image:height" content="320">
 <meta property="og:description" content="Трансляции мероприятий Прикладного Концептуального форума. Сайт - https://pkforum.m3ra.ru/. E-mail для связи: pkforum@m3ra.ru.">
-<style>.sans-serif {font-family: 'Roboto';}</style>
+{{ $style := resources.Get "main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 <title>
 {{- if .IsHome }}
 {{ .Site.Title }}

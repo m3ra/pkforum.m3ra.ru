@@ -1,0 +1,13 @@
+
+body,
+header>nav {
+  min-width: 340px;
+}
+
+.sans-serif {
+  font-family: 'Roboto';
+}
+
+.plr_62em {
+  padding: 0 .62em;
+}
