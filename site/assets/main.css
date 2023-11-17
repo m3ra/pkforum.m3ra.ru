@@ -7,3 +7,7 @@ header>nav {
 .sans-serif {
   font-family: 'Roboto';
 }
+
+.plr_62em {
+  padding: 0 .62em;
+}
