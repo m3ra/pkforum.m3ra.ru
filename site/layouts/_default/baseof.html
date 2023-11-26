@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "ru" }}">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-<meta property="og:site_name" content="Прикладной Концептуальный форум">
-<meta property="og:title" content="Прикладной Концептуальный форум">
-<meta property="og:url" content="https://pkforum.m3ra.ru/">
-<meta property="og:type" content="video.other">
-<meta property="og:image" content="https://pkforum.m3ra.ru/pkforum_320.jpg">
-<meta property="og:image:width" content="320">
-<meta property="og:image:height" content="320">
-<meta property="og:description" content="Трансляции мероприятий Прикладного Концептуального форума. Сайт - https://pkforum.m3ra.ru/. E-mail для связи: pkforum@m3ra.ru.">
-{{ $style := resources.Get "main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-<title>
-{{- if .IsHome }}
-{{ .Site.Title }}
-{{- else }}
-{{ .Title }} &middot; {{ .Site.Title }}
-{{- end }}
-</title>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+  {{ $style := resources.Get "main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  
+  <meta property="og:site_name" content="Прикладной Концептуальный форум">
+  <meta property="og:title" content="Прикладной Концептуальный форум">
+  <meta property="og:url" content="https://pkforum.m3ra.ru/">
+  <meta property="og:type" content="video.other">
+  <meta property="og:image" content="https://pkforum.m3ra.ru/pkforum_320.jpg">
+  <meta property="og:image:width" content="320">
+  <meta property="og:image:height" content="320">
+  <meta property="og:description" content="Трансляции мероприятий Прикладного Концептуального форума. Сайт - https://pkforum.m3ra.ru/. E-mail для связи: pkforum@m3ra.ru.">
+
+  <title>
+    {{- if .IsHome }}
+    {{ .Site.Title }}
+    {{- else }}
+    {{ .Title }} &middot; {{ .Site.Title }}
+    {{- end }}
+  </title>
+
+</head>
+
 <body class="sans-serif fw3">
 
-{{ block "header" . }}
-{{ partial "breadcrumb.html" . }}
-{{ end }}
+  {{ block "header" . }}
+  {{ partial "breadcrumb.html" . }}
+  {{ end }}
 
-{{ block "main" . }}
-{{ end }}
+  {{ block "main" . }}
+  {{ end }}
 
-{{ block "footer" . }}
-{{ partial "footer.html" . }}
-{{ end }}
+  {{ block "footer" . }}
+  {{ partial "footer.html" . }}
+  {{ end }}
