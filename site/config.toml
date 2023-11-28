@@ -6,6 +6,7 @@ buildFuture = true
 
 [params]
   description = 'Трансляции мероприятий Прикладного Концептуального форума. Сайт - https://pkforum.m3ra.ru/. E-mail для связи: pkforum@m3ra.ru.'
+  images = ['pkforum_320.jpg']
 
 [taxonomies]
   speaker = "speakers"
