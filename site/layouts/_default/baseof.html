@@ -12,6 +12,7 @@
   {{ $style := resources.Get "main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   
+  <meta property="og:site_name" content="{{ .Site.Title }}">
   {{ template "_internal/opengraph.html" . }}
 
   <title>
