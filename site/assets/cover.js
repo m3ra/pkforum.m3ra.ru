@@ -344,14 +344,14 @@ function button_click() {
 	ctx.fillStyle = "#FFF";
 	ctx.fillText(text_3, canvas_width - text_3__width - text_horizontal_padding, canvas_height - rect_height__base + text_baseline__offset);
 	
+  
+  let rect_decor__width = 10;
 	
 	let text_4 = input__speaker.value;
 
 	if (text_4 != "") {
 		
 		let text_4__width = text_width__fn(ctx, text_4);
-		
-		let rect_decor__width = 10;
 		
 		ctx.fillStyle = "#323232";
 		ctx.fillRect(0, canvas_height - rect_height__base, text_4__width + text_horizontal_paddings + rect_decor__width, rect_height__base);
