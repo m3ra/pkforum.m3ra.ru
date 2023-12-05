@@ -3,4 +3,7 @@ title: "Ра Свет не за горами, или почему жизненн
 date: "03 Dec 23 17:00 MSK"
 draft: false
 speakers: ["andrey-senchukov"]
+videos:
+  доклад: ga3cZ-zW2_s
+  обсуждение доклада: LPTghIlrQqg
 ---
