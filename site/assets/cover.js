@@ -16,8 +16,6 @@ let input__image_width = document.getElementById("input__image_width");
 let input__image_height = document.getElementById("input__image_height");
 let input__image_sx = document.getElementById("input__image_sx");
 let input__image_sy = document.getElementById("input__image_sy");
-let input__image_sWidth = document.getElementById("input__image_sWidth");
-let input__image_sHeight = document.getElementById("input__image_sHeight");
 
 input__number_forum.value = 1;
 input__number_day.value = 1;
@@ -51,8 +49,6 @@ input__image_height.valueAsNumber = canvas_height;
 
 input__image_sx.valueAsNumber = 0;
 input__image_sy.valueAsNumber = 0;
-input__image_sWidth.valueAsNumber = 0;
-input__image_sHeight.valueAsNumber = 0;
 
 window.onload = e => {
 	
@@ -217,12 +213,6 @@ window.onload = e => {
 			input__image_sx.valueAsNumber = canvas_width
 		}
 		
-		if (input__image_sWidth.valueAsNumber > canvas_width - input__image_sx.valueAsNumber) {
-			input__image_sWidth.valueAsNumber = canvas_width - input__image_sx.valueAsNumber
-			
-			input__image_sHeight.valueAsNumber = (input__image_sWidth.valueAsNumber / canvas_width * canvas_height).toFixed(2);
-		}
-		
 		button_click();
 		
 	}
@@ -236,44 +226,6 @@ window.onload = e => {
 		if (input__image_sy.valueAsNumber > canvas_height) {
 			input__image_sy.valueAsNumber = canvas_height
 		}
-		
-		if (input__image_sHeight.valueAsNumber > canvas_height - input__image_sy.valueAsNumber) {
-			input__image_sHeight.valueAsNumber = canvas_height - input__image_sy.valueAsNumber
-			
-			input__image_sWidth.valueAsNumber = (input__image_sHeight.valueAsNumber / canvas_height * canvas_width).toFixed(2);
-		}
-		
-		button_click();
-		
-	}
-	
-	input__image_sWidth.oninput = e => {
-		
-		if (input__image_sWidth.valueAsNumber < 0) {
-			input__image_sWidth.valueAsNumber = 0
-		}
-		
-		if (input__image_sWidth.valueAsNumber > canvas_width - input__image_sx.valueAsNumber) {
-			input__image_sWidth.valueAsNumber = canvas_width - input__image_sx.valueAsNumber
-		}
-		
-		input__image_sHeight.valueAsNumber = (input__image_sWidth.valueAsNumber / canvas_width * canvas_height).toFixed(2);
-		
-		button_click();
-		
-	}
-	
-	input__image_sHeight.oninput = e => {
-		
-		if (input__image_sHeight.valueAsNumber < 0) {
-			input__image_sHeight.valueAsNumber = 0
-		}
-		
-		if (input__image_sHeight.valueAsNumber > canvas_height - input__image_sy.valueAsNumber) {
-			input__image_sHeight.valueAsNumber = canvas_height - input__image_sy.valueAsNumber
-		}
-		
-		input__image_sWidth.valueAsNumber = (input__image_sHeight.valueAsNumber / canvas_height * canvas_width).toFixed(2);
 		
 		button_click();
 		
@@ -328,12 +280,9 @@ function button_click() {
 	
 	let image_sx = input__image_sx.valueAsNumber;
 	let image_sy = input__image_sy.valueAsNumber;
-	let image_sWidth = input__image_sWidth.valueAsNumber;
-	let image_sHeight = input__image_sHeight.valueAsNumber;
 	
-	if (image_sx > 0 || image_sy > 0 || image_sWidth > 0 || image_sHeight > 0) {
+	if (image_sx > 0 || image_sy > 0) {
 		
-//		ctx.drawImage(img_input, image_sx, image_sy, image_sWidth, image_sHeight, image_x, image_y, image_width, image_height);
 		ctx.drawImage(img_input, image_sx, image_sy, image_width, image_height, image_x, image_y, image_width, image_height);
 		
 	} else {
