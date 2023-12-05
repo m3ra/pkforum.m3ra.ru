@@ -86,9 +86,7 @@
 	</div>
 </article>
 {{ $secureJS := resources.Get "cover.js" | js.Build | minify | fingerprint "sha512" }}
-<!--<script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>-->
-{{ $secureJS2 := resources.Get "cover.js" }}
-<script src="{{ $secureJS2.RelPermalink }}" defer></script>
+<script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end }}
 {{ define "footer" }}
 <div class="flex items-center justify-center mv5">
