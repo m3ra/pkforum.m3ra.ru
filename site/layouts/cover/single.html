@@ -1,0 +1,83 @@
+{{ define "header" }}
+<h1 class="plr_62em f3 f2-ns f-4-l fw3 mv5 tc sans-serif dark-green">
+  {{ .Title }}
+</h1>
+{{ end }}
+{{ define "main" }}
+<article class="plr_62em f5 f4-ns f3-l w-100 tj center lh-copy">
+	{{ .Content }}
+	<div class="wrapper_flex">
+		<div class="wrapper_flex__column_1">
+			<div>
+				<button id="render_canvas">Перезаполнить</button>
+			</div>
+			<div>
+				<span>ПКФ </span><input id="input__number_forum" type="number">
+			</div>
+			<div>
+				<span>Доклад </span><input id="input__number_day" type="number">
+			</div>
+			<div>
+				<span>Дата </span><input id="input__date" type="date">
+			</div>
+			<div>
+				<span>Обсуждение </span><input id="input__discussion" type="checkbox">
+			</div>
+			<div class="text">
+				<span>Строка 1: </span><input id="input__text_1" type="text">
+			</div>
+			<div class="text">
+				<span>Строка 2: </span><input id="input__text_2" type="text">
+			</div>
+			<div class="text">
+				<span>Строка 3: </span><input id="input__text_3" type="text">
+			</div>
+			<div class="speaker">
+				<span>Докладчик: </span><input id="input__speaker" type="text">
+			</div>
+			<div>
+				<span>Вертикальный отступ заголовка доклада снизу </span><input id="input__text_vertical_padding" type="number">
+			</div>
+		</div>
+		<div class="wrapper_flex__column_2">
+			<div>
+				<p><strong>Изображение:</strong></p>
+			</div>
+			<div>
+				<button id="select_file">Выбрать (ожидается 1280 x 720)</button> <span id="file_caption"></span>
+			</div>
+			<div>
+				<span>Начало по горизонтали </span><input id="input__image_x" type="number">
+			</div>
+			<div>
+				<span>Начало по вертикали </span><input id="input__image_y" type="number">
+			</div>
+			<div>
+				<span>Ширина </span><input id="input__image_width" type="number">
+			</div>
+			<div>
+				<span>Высота </span><input id="input__image_height" type="number">
+			</div>
+			<div>
+				<span>Обрезка слева </span><input id="input__image_sx" type="number">
+			</div>
+			<div>
+				<span>Обрезка сверху </span><input id="input__image_sy" type="number">
+			</div>
+		</div>
+	</div>
+	<div>
+		<canvas id="canvas" width="1280" height="720"></canvas>
+	</div>
+	<div>
+		<img id="img_input">
+	</div>
+</article>
+{{ $secureJS := resources.Get "cover.js" | js.Build | minify | fingerprint "sha512" }}
+<script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ end }}
+{{ define "footer" }}
+<div class="flex items-center justify-center mv5">
+<a href="/" class="f5 f4-l link dim br2 ph3 pv2 mb2 dib white bg-dark-green">На главную</a>
+</div>
+{{ end }}

@@ -11,3 +11,32 @@ header>nav {
 .plr_62em {
   padding: 0 .62em;
 }
+
+div + div {
+	margin-top: 0.3em;
+}
+
+.text>input {
+	width: 450px;
+}
+
+.wrapper_flex {
+	display: flex;
+}
+
+.wrapper_flex>.wrapper_flex__column_1 {
+	flex: 1 1 0;
+}
+
+div.wrapper_flex__column_2+div.wrapper_flex__column_1 {
+	margin-right: 2em;
+}
+
+.wrapper_flex>.wrapper_flex__column_2 {
+	flex: 1 1 0;
+}
+
+img#img_input {
+  display: none;
+}
+
