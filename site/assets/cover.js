@@ -38,10 +38,6 @@ let canvas_height = 720;
 let rect_height__base = 63; // 63.4
 let text__5_notFirst__vertical_reduce = 10;
 
-//input__text_1.value = "";
-//input__text_2.value = "";
-//input__text_3.value = "";
-
 input__image_x.valueAsNumber = 0;
 input__image_y.valueAsNumber = 0;
 input__image_width.valueAsNumber = canvas_width;
@@ -238,7 +234,6 @@ window.onload = e => {
 function text_width__fn(ctx, text) {
 	
 	let text_measure = ctx.measureText(text); // TextMetrics object
-//	let text_width = text_measure.width;
 	
 	return text_measure.width;
 	
@@ -268,7 +263,6 @@ function button_click() {
 	canvas.height = canvas_height;
 	
 	const img_input = document.getElementById("img_input");
-	//const img_input = document.getElementById("img_input_fix");
 	
 	ctx.fillStyle = "#000";
 	ctx.fillRect(0, 0, canvas_width, canvas_height);
@@ -299,14 +293,8 @@ function button_click() {
 	let input__number_day__text = input__number_day.value;
 	
 	let text = "Прикладной Концептуальный Форум #" + input__number_forum__text + ". День " + input__number_day__text;
-//	ctx.fillText(text, 10, 44);
 	
 	let text_width = text_width__fn(ctx, text);
-	
-//	var text_measure = ctx.measureText(text); // TextMetrics object
-//	let text_width = text_measure.width; // 16;
-//	let text_2 = text_measure.width; // 16;
-//	let text_height = text_measure.width; // 16;
 	
 	let text_horizontal_paddings = 21;
 	let text_horizontal_padding = text_horizontal_paddings / 2;
@@ -331,7 +319,6 @@ function button_click() {
 	let input__date__mongth_text = months[input__date__mongth_index];
 	
 	let text_2 = input__date__day + " " + input__date__mongth_text + " " + input__date__year; //"16 ноября 2023 г.";
-//	ctx.fillText(text, 10, text_baseline__offset);
 	
 	let text_2__width = text_width__fn(ctx, text_2);
 	
@@ -343,7 +330,6 @@ function button_click() {
 	
 	
 	let text_3 = "pkforum.m3ra.ru";
-//	ctx.fillText(text, 10, text_baseline__offset);
 	
 	let text_3__width = text_width__fn(ctx, text_3);
 	
@@ -355,7 +341,6 @@ function button_click() {
 	
 	
 	let text_4 = "Евгений Силаев";
-//	ctx.fillText(text, 10, text_baseline__offset);
 	
 	let text_4__width = text_width__fn(ctx, text_4);
 	
@@ -383,7 +368,6 @@ function button_click() {
 	
 	let text__5_3 = input__text_3.value;
 	let text__5_3__filled = text__5_3 != "";
-//	ctx.fillText(text, 10, text_baseline__offset);
 	
 	let text__5_notFirst__number = text__5_notFirst__number_fn();
 
@@ -444,7 +428,6 @@ function button_click() {
 		ctx.textAlign = "left";
 		
 		let text_6 = !input__discussion.checked ? "Доклад" : "Обсуждение доклада";
-		//	ctx.fillText(text, 10, text_baseline__offset);
 		
 		let text_6__vertical_offset = text__5_1__vertical_offset + rect_height__base; // + text_vertical_padding;
 		
@@ -461,18 +444,6 @@ function button_click() {
 		
 	}
 	
-//	canvas.setAttribute('crossorigin', 'anonymous'); //crossorigin = "anonymous";
-	
-	const img_output__src_data = canvas.toDataURL('image/png');
-	
-	img_output = document.getElementById('img_output');
-//	img_output.setAttribute('crossorigin', 'anonymous'); //crossorigin = "anonymous";
-	img_output.src = img_output__src_data;
-	
-//	var img = document.createElement('img');
-//	img.src='http://your_server/img.png';
-//	img.setAttribute('crossOrigin','anonymous');
-	
 }
 
 function file_click () {
@@ -483,21 +454,17 @@ function file_click () {
 	
 	inputFile.onchange = e => {
 		
-		// getting a hold of the file reference
 		var file = e.target.files[0];
 		
 		let file_caption = document.getElementById("file_caption");
 		
 		file_caption.textContent = file.name;
 		
-		// setting up the reader
 		var reader = new FileReader();
-//		reader.readAsText(file, 'UTF-8');
 		reader.readAsDataURL(file, 'UTF-8');
 		
 		// here we tell the reader what to do when it done reading...
 		reader.onload = readerEvent => {
-//			var content = readerEvent.target.result; // this is the content!
 			var img_input__src_data = readerEvent.target.result; // this is the content!
 			img_input = document.getElementById('img_input');
 			img_input.setAttribute('crossorigin', 'anonymous'); //crossorigin = "anonymous";
@@ -510,15 +477,4 @@ function file_click () {
 	inputFile.click();
 	
 }
-
-//	const img_input_fix = document.getElementById("img_input_fix");
-//	
-//	img_input_fix.onload = e => {
-//		
-//		button_click();
-//		
-//	}
-
-//	window.onload = button_click();
-//	window.addEventListener("load", button_click, false);
 
