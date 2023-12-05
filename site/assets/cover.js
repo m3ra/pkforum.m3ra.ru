@@ -48,6 +48,9 @@ input__image_sy.valueAsNumber = 0;
 
 window.onload = e => {
 	
+	document.getElementById("button").onclick = button_click;
+	document.getElementById("file").onclick = file_click;
+	
 	input__number_forum.oninput = e => {
 		
 		if (input__number_forum.valueAsNumber < 1) {
