@@ -468,11 +468,14 @@ function file_click () {
 		
 		// here we tell the reader what to do when it done reading...
 		reader.onload = readerEvent => {
-			var img_input__src_data = readerEvent.target.result; // this is the content!
+			
+      var img_input__src_data = readerEvent.target.result; // this is the content!
 			img_input = document.getElementById('img_input');
 			img_input.setAttribute('crossorigin', 'anonymous'); //crossorigin = "anonymous";
 			img_input.src = img_input__src_data;
-			console.log(img_input__src_data);
+      
+      button_click();
+      
 		}
 		
 	}
