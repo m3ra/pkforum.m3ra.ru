@@ -75,15 +75,6 @@
 	<div>
 		<canvas id="canvas" width="1280" height="720"></canvas>
 	</div>
-	<div>
-		<img id="img_output">
-	</div>
-	<div>
-		<img id="img_input_fix" src="41.1.png">
-	</div>
-	<div>
-		<img id="img_input">
-	</div>
 </article>
 {{ $secureJS := resources.Get "cover.js" | js.Build | minify | fingerprint "sha512" }}
 <script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
