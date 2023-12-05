@@ -8,8 +8,8 @@ let input__discussion = document.getElementById("input__discussion");
 let input__text_1 = document.getElementById("input__text_1");
 let input__text_2 = document.getElementById("input__text_2");
 let input__text_3 = document.getElementById("input__text_3");
+let input__speaker = document.getElementById("input__speaker");
 let input__text_vertical_padding = document.getElementById("input__text_vertical_padding");
-
 let input__image_x = document.getElementById("input__image_x");
 let input__image_y = document.getElementById("input__image_y");
 let input__image_width = document.getElementById("input__image_width");
@@ -343,7 +343,7 @@ function button_click() {
 	ctx.fillText(text_3, canvas_width - text_3__width - text_horizontal_padding, canvas_height - rect_height__base + text_baseline__offset);
 	
 	
-	let text_4 = "Евгений Силаев";
+	let text_4 = input__speaker.value;
 	
 	let text_4__width = text_width__fn(ctx, text_4);
 	
