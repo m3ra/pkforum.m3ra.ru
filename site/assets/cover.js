@@ -129,6 +129,8 @@ window.onload = e => {
 		
 	}
 	
+	input__speaker.oninput = button_click;
+	
 	input__text_vertical_padding.oninput = e => {
 		
 		let text__5_notFirst__number = text__5_notFirst__number_fn();
@@ -344,20 +346,23 @@ function button_click() {
 	
 	
 	let text_4 = input__speaker.value;
-	
-	let text_4__width = text_width__fn(ctx, text_4);
-	
-	let rect_decor__width = 10;
-	
-	ctx.fillStyle = "#323232";
-	ctx.fillRect(0, canvas_height - rect_height__base, text_4__width + text_horizontal_paddings + rect_decor__width, rect_height__base);
-	
-	ctx.fillStyle = "#FFF";
-	ctx.fillText(text_4, text_horizontal_padding + rect_decor__width, canvas_height - rect_height__base + text_baseline__offset);
-	
-	ctx.fillStyle = "#137752";
-	ctx.fillRect(0, canvas_height - rect_height__base, rect_decor__width, rect_height__base);
-	
+
+	if (text_4 != "") {
+		
+		let text_4__width = text_width__fn(ctx, text_4);
+		
+		let rect_decor__width = 10;
+		
+		ctx.fillStyle = "#323232";
+		ctx.fillRect(0, canvas_height - rect_height__base, text_4__width + text_horizontal_paddings + rect_decor__width, rect_height__base);
+		
+		ctx.fillStyle = "#FFF";
+		ctx.fillText(text_4, text_horizontal_padding + rect_decor__width, canvas_height - rect_height__base + text_baseline__offset);
+		
+		ctx.fillStyle = "#137752";
+		ctx.fillRect(0, canvas_height - rect_height__base, rect_decor__width, rect_height__base);
+		
+	}
 	
 	ctx.font = "46px Roboto Light";
 	
