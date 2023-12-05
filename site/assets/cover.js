@@ -1,5 +1,5 @@
 
-let months = ["123января", "февраля", "марта", "апреля", "мая", "июня", "июля", "агуста", "сентября", "октября", "ноября", "декабря"];
+let months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "агуста", "сентября", "октября", "ноября", "декабря"];
 
 let input__number_forum = document.getElementById("input__number_forum");
 let input__number_day = document.getElementById("input__number_day");
