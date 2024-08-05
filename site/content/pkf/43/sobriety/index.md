@@ -1,6 +1,6 @@
 ---
 title: "Возвращение трезвости без желания человека"
-date: "05 Aug 24 14:00 MSK"
+date: "05 Aug 24 15:00 MSK"
 draft: false
 speakers: ["sergey-zaycev"]
 ---
