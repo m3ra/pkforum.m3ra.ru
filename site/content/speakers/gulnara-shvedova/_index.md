@@ -1,5 +1,5 @@
 ---
 title: "Гульнара Шведова"
-loc: "Москва"
+loc: "Москва - Шри-Ланка"
 telegram: "radugaradosti"
 ---
