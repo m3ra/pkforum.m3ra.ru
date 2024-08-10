@@ -10,3 +10,5 @@ type = "system"
 ![sponsr image](/donates/sponsr_16.webp) [Прикладной концептуальный форум](https://sponsr.ru/pkforum "smartCard-inline")  
 ![vk image](/donates/vk_16.ico) [Поддержка проекта ПКФ](https://vk.com/pkforum_donates "smartCard-inline")  
 ![patreon image](/donates/patreon_16.png) [pkforum | Patreon](https://www.patreon.com/pkforum "smartCard-inline")
+
+TON: `UQDspO8fM9rSWZU4RFbDdt7jU5rrrsLsla68sNAgPing_Nqo`
