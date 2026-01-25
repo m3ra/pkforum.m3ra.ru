@@ -1,7 +1,17 @@
+
+## Докладчик
+
+### links
+  Используется для указания ссылок.
+
+Используется в шаблоне: "/pkforum.m3ra.ru/site/layouts/speakers/list.html"
+
+Пример использования:
+
 ---
 title: "Артём Сверкунов"
 loc: "Россия"
-email: "89126699995@mail.ru"
+email: "189126699995@mail.ru"
 telegram: "Artemych_33"
 links:
   - title: VK

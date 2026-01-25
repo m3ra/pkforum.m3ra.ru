@@ -1,5 +1,6 @@
 {{- define "main" -}}
-<div class="pv4 ph3 mw8 center tr">
+<div class="pv4 ph3 mw8 center">
+<div class="tr">
   {{ if .Params.email }}
   <a class="link dark-green dim dib mh3 tc" href="mailto:{{ .Params.email}}" title="E-Mail">
     <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.17 230.17" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
@@ -13,6 +14,14 @@
     <path d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"/></svg>
     <span class="f6 f5-ns f4-l db">Telegram</span>
   </a>
+  {{ end }}
+</div>
+  {{ with .Params.links }}
+  <ul class="list">
+    {{ range . }}
+      <li><span class="f6 f5-ns f4-l">{{ .title }} - </span><a class="link dark-green dim dib tc" href="{{ .link }}" title="{{ .title }}"><span class="f6 f5-ns f4-l">{{ .link }}</span></a></li>
+    {{ end }}
+  </ul>
   {{ end }}
 </div>
 
