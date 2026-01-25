@@ -1,7 +1,7 @@
 ---
 title: "Артём Сверкунов"
 loc: "Россия"
-email: "189126699995@mail.ru"
+email: "89126699995@mail.ru"
 telegram: "Artemych_33"
 links:
   - title: VK
