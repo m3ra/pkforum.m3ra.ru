@@ -7,7 +7,7 @@ links:
   - title: VK
     link: https://vk.com/sverkunov_av
   - title: Фонд развития человека «Стать»
-    link: https://vk.com/frchs
+    link: https://vk.com/fond_stat
   - title: Здравница
-    link: https://vk.com/zdravnica_rus
+    link: https://vk.com/zdravnica
 ---
